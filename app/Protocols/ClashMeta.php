@@ -24,7 +24,7 @@ class ClashMeta
         $user = $this->user;
         $appName = admin_setting('app_name', 'XBoard');
         $defaultConfig = base_path() . '/resources/rules/default.clash.yaml';
-        $customConfig = base_path() . '/resources/rules/custom.clash.yaml';
+        $customConfig = base_path() . '/resources/rules/custom.ruleset.clash.yaml';
         if (\File::exists($customConfig)) {
             $config = Yaml::parseFile($customConfig);
         } else {
