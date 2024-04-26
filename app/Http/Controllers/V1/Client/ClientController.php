@@ -47,7 +47,7 @@ class ClientController extends Controller
             'v2rayN' => '6.31'
         ];
         foreach($minSupportHy2ClinetVersionMap as $client => $minVersion){
-            if (stripos($flag, $client) !== false || $this->versionCompare($version, $minVersion)) {
+            if (stripos($flag, $client) !== false && $this->versionCompare($version, $minVersion)) {
                 $supportHy2 = true;
                 break; // 如果已经找到支持的客户端，提前退出循环
             }
@@ -154,7 +154,7 @@ class ClientController extends Controller
         if (!isset($servers[0])) return;
         if($rejectServerCount > 0){
             array_unshift($servers, array_merge($servers[0], [
-                'name' => "{$rejectServerCount}个Hy2节点不支持",
+                'name' => "去除{$rejectServerCount}条不合适线路",
             ]));
         }
         if (!(int)admin_setting('show_info_to_server_enable', 0)) return;
