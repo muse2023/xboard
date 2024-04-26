@@ -47,7 +47,7 @@ class ClientController extends Controller
             'v2rayN' => '6.31'
         ];
         foreach($minSupportHy2ClinetVersionMap as $client => $minVersion){
-            if (stripos($flag, $client) !== false && $this->versionCompare($version, $minVersion)) {
+            if (stripos($flag, $client) !== false || $this->versionCompare($version, $minVersion)) {
                 $supportHy2 = true;
                 break; // 如果已经找到支持的客户端，提前退出循环
             }
