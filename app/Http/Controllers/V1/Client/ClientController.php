@@ -154,7 +154,7 @@ class ClientController extends Controller
         if (!isset($servers[0])) return;
         if($rejectServerCount > 0){
             array_unshift($servers, array_merge($servers[0], [
-                'name' => "{$rejectServerCount}条Hy节点",
+                'name' => "Hysteria2不支持！",
             ]));
         }
         if (!(int)admin_setting('show_info_to_server_enable', 0)) return;
