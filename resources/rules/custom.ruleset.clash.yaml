@@ -1,0 +1,91 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+
+unified-delay: true
+tcp-concurrent: true
+
+experimental:
+    sniff-tls-sni: true
+clash-for-android:
+    append-system-dns: false    
+  
+sniffer:
+    enable: true
+    force-dns-mapping: true
+    parse-pure-ip: true
+    override-destination: true
+    sniff: { TLS: { ports: [443, 8443] }, HTTP: { ports: [80, 8080-8880], override-destination: true } }
+    force-domain: [+.v2ex.com]
+    skip-domain: ['Mijia Cloud', dlg.io.mi.com, +.apple.com]
+
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://1.1.1.1/dns-query', 'https://dns.cloudflare.com/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+
+proxies:
+
+proxy-groups:
+    - { name: "🥢 选择节点", type: select, proxies: ["🇭🇰 香港|Auto","🇨🇳 台湾|Auto","🇸🇬 新加坡|Auto","🇯🇵 日本|Auto","🇺🇸 美国|Auto","♻️ Auto"] }
+    - { name: "♻️ Auto", type: fallback, proxies: [/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/], url: "http://www.gstatic.com/generate_204", interval: 300 }
+    - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]} 
+    - { name: "🎮 Game", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "🌈 Google", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}     
+    - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}    
+    - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "🌏 国外网站", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "🎯 国内网站", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
+    - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}  
+    - { name: "🇭🇰 香港|Auto", type: fallback, proxies: [/香港/], url: 'http://www.gstatic.com/generate_204', interval: 300 }    
+    - { name: "🇨🇳 台湾|Auto", type: fallback, proxies: [/台湾/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+    - { name: "🇸🇬 新加坡|Auto", type: fallback, proxies: [/新加坡/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+    - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
+    - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
+
+rule-providers:
+    Direct: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/muse2023/bigme_ruleset/main/Bigme_Direct.yaml', interval: 86400, path: ./ruleset/Bigme_Direct.yaml }
+    Proxy: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/muse2023/bigme_ruleset/main/Bigme_Proxy.yaml', interval: 86400, path: ./ruleset/Bigme_Proxy.yaml }
+    Netflix: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml', interval: 86400, path: ./ruleset/Netflix.yaml }
+    Disney: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml', interval: 86400, path: ./ruleset/Disney.yaml }
+    BiliBili: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml', interval: 86400, path: ./ruleset/BiliBili.yaml }
+    Game: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml', interval: 86400, path: ./ruleset/Game.yaml }
+    Google: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml', interval: 86400, path: ./ruleset/Google.yaml }
+    YouTube: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yaml }    
+    Telegram: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml', interval: 86400, path: ./ruleset/Telegram.yaml }
+    Microsoft: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml', interval: 86400, path: ./ruleset/Microsoft.yaml }
+    Apple: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml', interval: 86400, path: ./ruleset/Apple.yaml }
+    GlobalMedia: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml', interval: 86400, path: ./ruleset/GlobalMedia.yaml }
+    SteamCN: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/linger040831/rulses/main/SteamCN.yaml' }
+
+rules:
+    # 自定义规则
+    ##必须直连的
+    - RULE-SET,Direct,🎯 国内网站
+    - RULE-SET,SteamCN,🎯 国内网站         
+    ##必须代理的
+    - RULE-SET,Proxy,🥢 选择节点
+    - RULE-SET,Netflix,🎥 NETFLIX
+    - RULE-SET,Disney,🎥 DisneyP
+    - RULE-SET,BiliBili,📺 BiliBili  
+    - RULE-SET,Game,🎮 Game
+    - RULE-SET,Google,🌈 Google,no-resolve         
+    - RULE-SET,YouTube,🌈 Google      
+    - RULE-SET,Telegram,📲 电报消息
+    - RULE-SET,Microsoft,Ⓜ️ 微软服务           
+    - RULE-SET,Apple,🍎 苹果服务
+    - RULE-SET,GlobalMedia,🌏 国外网站,no-resolve      
+    - GEOIP,CN,🎯 国内网站
+    - MATCH,🐟 漏网之鱼
