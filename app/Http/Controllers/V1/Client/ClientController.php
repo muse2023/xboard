@@ -38,7 +38,7 @@ class ClientController extends Controller
             'sing-box' => '1.5.0',
             'stash' => '2.5.0',
             'Shadowrocket' => '1993',
-            'ClashMetaForAndroid' => '2.8.8',
+            'ClashMetaForAndroid' => '2.9.0',
             'Nekoray' => '3.24',
             'verge' => '1.3.8',
             'ClashX Meta' => '1.3.5',
@@ -47,11 +47,11 @@ class ClientController extends Controller
             'v2rayN' => '6.31'
         ];
         foreach($minSupportHy2ClinetVersionMap as $client => $minVersion){
-            if (stripos($flag, $client) !== false || $this->versionCompare($version, $minVersion)) {
+            if (stripos($flag, $client) !== false && $this->versionCompare($version, $minVersion)) {
                 $supportHy2 = true;
                 break; // 如果已经找到支持的客户端，提前退出循环
             }
-        }        
+        }
         if(config('app.debug')){
             Log::channel('daily')->info($flag);
         }
