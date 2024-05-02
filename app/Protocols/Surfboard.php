@@ -64,7 +64,8 @@ class Surfboard
 
         // Subscription link
         $subsURL = Helper::getSubscribeUrl("/api/v1/client/subscribe?token={$user['token']}");
-        $subsDomain = request()->header('Host');
+        // $subsDomain = request()->header('Host');
+        $subsDomain = 'cloud.bigme.pro';
 
         $config = str_replace('$subs_link', $subsURL, $config);
         $config = str_replace('$subs_domain', $subsDomain, $config);

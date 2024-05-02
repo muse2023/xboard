@@ -86,7 +86,8 @@ class Stash
         });
         $config['proxy-groups'] = array_values($config['proxy-groups']);
         // Force the current subscription domain to be a direct rule
-        $subsDomain = request()->header('Host');
+        // $subsDomain = request()->header('Host');
+        $subsDomain = 'cloud.bigme.pro';
         if ($subsDomain) {
             array_unshift($config['rules'], "DOMAIN,{$subsDomain},DIRECT");
         }
