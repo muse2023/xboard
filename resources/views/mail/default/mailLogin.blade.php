@@ -24,8 +24,13 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-size:14px;color:#377dff;padding:24px 40px 0 40px;font-weight:1000">
-                                        <a href="https://info.bigmeok.me" style="font-size:14px;color:#377dff;text-decoration:none">防止失联|收藏：https://info.bigmeok.me</a>
+                                    <td style="font-size:14px;color:#377dff;padding:24px 40px 0 40px">
+                                        <a href="https://info.bigmeok.me" style="font-size:14px;color:#377dff;text-decoration:none">引导页：https://info.bigmeok.me</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:14px;color:#377dff;padding:24px 40px 0 40px">
+                                            <a href="https://pub.bigmeok.me" style="font-size:14px;color:#377dff;text-decoration:none">网址发布页：https://pub.bigmeok.me</a>
                                     </td>
                                 </tr>
                                 <tr style="padding:40px;display:table-cell">
