@@ -12915,51 +12915,63 @@
 					id: "\u6211\u7684\u94b1\u5305"
 				})), u.a.createElement("p", {
 					className: "display-4 text-black font-w300 mb-2"
-				}, void 0 !== t.balance ? ((parseInt(t
-					.balance) + parseInt(t
-						.commission_balance)) / 100).toFixed(
-							2) : "--.--", u.a.createElement("span", {
-								className: "font-size-h5 text-muted ml-4"
-							}, r.currency)), u.a.createElement("span", {
-								className: "text-muted",
-								style: {
-									cursor: "pointer"
-								}
-							}, Object(m["formatMessage"])({
-								id: "\u8d26\u6237\u4f59\u989d(\u4ec5\u6d88\u8d39)"
-							}))))))), u.a.createElement("div", {
-								className: "row mb-3 mb-md-0"
-							}, u.a.createElement("div", {
-								className: "col-md-12"
-							}, u.a.createElement("div", {
-								className: "block block-rounded card "
-							}, u.a.createElement("div", {
-								className: "block-header bcard-header"
-							}, u.a.createElement("h3", {
-								className: "block-title"
-							}, Object(m["formatMessage"])({
-								id: "\u4fee\u6539\u5bc6\u7801"
+				}, void 0 !== t.balance ? (parseInt(t
+					.balance) / 100).toFixed(
+						2) : "--.--", u.a.createElement("span", {
+							className: "font-size-h5 text-muted ml-4"
+						}, r.currency)), u.a.createElement("span", {
+							className: "text-muted",
+							style: {
+								cursor: "pointer"
+							}
+						}, Object(m["formatMessage"])({
+							id: "\u8d26\u6237\u4f59\u989d(\u4ec5\u6d88\u8d39)"
+						}))))))), u.a.createElement("div", {
+							className: "row mb-3 mb-md-0"
+						}, u.a.createElement("div", {
+							className: "col-md-12"
+						}, u.a.createElement("div", {
+							className: "block block-rounded card "
+						}, u.a.createElement("div", {
+							className: "block-header bcard-header"
+						}, u.a.createElement("h3", {
+							className: "block-title"
+						}, Object(m["formatMessage"])({
+							id: "\u4fee\u6539\u5bc6\u7801"
+						})), u.a.createElement("div", {
+							className: "block-options"
+						})), u.a.createElement("div", {
+							className: "block-content"
+						}, u.a.createElement("div", {
+							className: "row push"
+						}, u.a.createElement("div", {
+							className: "col-lg-8 col-xl-5"
+						}, u.a.createElement("div", {
+							className: "form-group"
+						}, u.a.createElement("label", null, Object(
+							m["formatMessage"])({
+								id: "\u65e7\u5bc6\u7801"
+							})), u.a.createElement("input", {
+								type: "password",
+								className: "form-control",
+								placeholder: Object(m[
+									"formatMessage"])({
+										id: "\u8bf7\u8f93\u5165\u65e7\u5bc6\u7801"
+									}),
+								ref: "old_password"
 							})), u.a.createElement("div", {
-								className: "block-options"
-							})), u.a.createElement("div", {
-								className: "block-content"
-							}, u.a.createElement("div", {
-								className: "row push"
-							}, u.a.createElement("div", {
-								className: "col-lg-8 col-xl-5"
-							}, u.a.createElement("div", {
 								className: "form-group"
 							}, u.a.createElement("label", null, Object(
 								m["formatMessage"])({
-									id: "\u65e7\u5bc6\u7801"
+									id: "\u65b0\u5bc6\u7801"
 								})), u.a.createElement("input", {
 									type: "password",
 									className: "form-control",
 									placeholder: Object(m[
 										"formatMessage"])({
-											id: "\u8bf7\u8f93\u5165\u65e7\u5bc6\u7801"
+											id: "\u8bf7\u8f93\u5165\u65b0\u5bc6\u7801"
 										}),
-									ref: "old_password"
+									ref: "new_password"
 								})), u.a.createElement("div", {
 									className: "form-group"
 								}, u.a.createElement("label", null, Object(
@@ -12972,135 +12984,122 @@
 											"formatMessage"])({
 												id: "\u8bf7\u8f93\u5165\u65b0\u5bc6\u7801"
 											}),
-										ref: "new_password"
-									})), u.a.createElement("div", {
+										ref: "re_password"
+									})), u.a.createElement(i["a"], {
+										type: "primary",
+										onClick: () => this.changePassword(),
+										loading: n
+									}, Object(m["formatMessage"])({
+										id: "\u4fdd\u5b58"
+									})))))))), u.a.createElement("div", {
+										className: "row mb-3 mb-md-0"
+									}, u.a.createElement("div", {
+										className: "col-md-12"
+									}, u.a.createElement("div", {
+										className: "block block-rounded card "
+									}, u.a.createElement("div", {
+										className: "block-header bcard-header"
+									}, u.a.createElement("h3", {
+										className: "block-title"
+									}, Object(m["formatMessage"])({
+										id: "\u901a\u77e5"
+									}))), u.a.createElement("div", {
+										className: "block-content"
+									}, u.a.createElement("div", {
+										className: "row"
+									}, u.a.createElement("div", {
+										className: "col-lg-8 col-xl-5"
+									}, u.a.createElement("div", {
 										className: "form-group"
 									}, u.a.createElement("label", null, Object(
 										m["formatMessage"])({
-											id: "\u65b0\u5bc6\u7801"
-										})), u.a.createElement("input", {
-											type: "password",
-											className: "form-control",
-											placeholder: Object(m[
-												"formatMessage"])({
-													id: "\u8bf7\u8f93\u5165\u65b0\u5bc6\u7801"
-												}),
-											ref: "re_password"
-										})), u.a.createElement(i["a"], {
-											type: "primary",
-											onClick: () => this.changePassword(),
-											loading: n
-										}, Object(m["formatMessage"])({
-											id: "\u4fdd\u5b58"
-										})))))))), u.a.createElement("div", {
-											className: "row mb-3 mb-md-0"
-										}, u.a.createElement("div", {
-											className: "col-md-12"
-										}, u.a.createElement("div", {
-											className: "block block-rounded card "
-										}, u.a.createElement("div", {
-											className: "block-header bcard-header"
-										}, u.a.createElement("h3", {
-											className: "block-title"
-										}, Object(m["formatMessage"])({
-											id: "\u901a\u77e5"
-										}))), u.a.createElement("div", {
-											className: "block-content"
-										}, u.a.createElement("div", {
-											className: "row"
-										}, u.a.createElement("div", {
-											className: "col-lg-8 col-xl-5"
-										}, u.a.createElement("div", {
-											className: "form-group"
-										}, u.a.createElement("label", null, Object(
-											m["formatMessage"])({
-												id: "\u5230\u671f\u90ae\u4ef6\u63d0\u9192"
-											})), u.a.createElement("div", null, u.a
-												.createElement(a["a"], {
-													loading: this.props.user
-														.remind_expire_loading,
-													checked: t.remind_expire,
-													onChange: e => this.update(
-														"remind_expire", e ? 1 :
-														0)
-												}))), u.a.createElement("div", {
-													className: "form-group"
-												}, u.a.createElement("label", null, Object(
-													m["formatMessage"])({
-														id: "\u6d41\u91cf\u90ae\u4ef6\u63d0\u9192"
-													})), u.a.createElement("div", null, u.a
-														.createElement(a["a"], {
-															loading: this.props.user
-																.remind_traffic_loading,
-															checked: t.remind_traffic,
-															onChange: e => this.update(
-																"remind_traffic", e ?
-																1 : 0)
-														}))))))))), u.a.createElement("div", {
-															className: "row mb-3 mb-md-0"
-														}, u.a.createElement("div", {
-															className: "col-md-12"
-														}, r.is_telegram ? u.a.createElement("div", {
-															className: "block block-rounded card bind_telegram"
-														}, u.a.createElement("div", {
-															className: "block-header bcard-header"
-														}, u.a.createElement("h3", {
-															className: "block-title"
+											id: "\u5230\u671f\u90ae\u4ef6\u63d0\u9192"
+										})), u.a.createElement("div", null, u.a
+											.createElement(a["a"], {
+												loading: this.props.user
+													.remind_expire_loading,
+												checked: t.remind_expire,
+												onChange: e => this.update(
+													"remind_expire", e ? 1 :
+													0)
+											}))), u.a.createElement("div", {
+												className: "form-group"
+											}, u.a.createElement("label", null, Object(
+												m["formatMessage"])({
+													id: "\u6d41\u91cf\u90ae\u4ef6\u63d0\u9192"
+												})), u.a.createElement("div", null, u.a
+													.createElement(a["a"], {
+														loading: this.props.user
+															.remind_traffic_loading,
+														checked: t.remind_traffic,
+														onChange: e => this.update(
+															"remind_traffic", e ?
+															1 : 0)
+													}))))))))), u.a.createElement("div", {
+														className: "row mb-3 mb-md-0"
+													}, u.a.createElement("div", {
+														className: "col-md-12"
+													}, r.is_telegram ? u.a.createElement("div", {
+														className: "block block-rounded card bind_telegram"
+													}, u.a.createElement("div", {
+														className: "block-header bcard-header"
+													}, u.a.createElement("h3", {
+														className: "block-title"
+													}, Object(m["formatMessage"])({
+														id: "\u7ed1\u5b9aTelegram"
+													})), u.a.createElement("div", {
+														className: "block-options"
+													}, u.a.createElement(h["a"], null, u.a
+														.createElement("button", {
+															type: "button",
+															className: "me-2 mb-1 btn btn-falcon-primary"
 														}, Object(m["formatMessage"])({
-															id: "\u7ed1\u5b9aTelegram"
-														})), u.a.createElement("div", {
-															className: "block-options"
-														}, u.a.createElement(h["a"], null, u.a
-															.createElement("button", {
-																type: "button",
+															id: "\u7acb\u5373\u5f00\u59cb"
+														})))))) : u.a.createElement(u.a.Fragment, null), r
+															.telegram_discuss_link ? u.a.createElement("div", {
+																className: "block block-rounded card join_telegram_disscuss"
+															}, u.a.createElement("div", {
+																className: "block-header bcard-header"
+															}, u.a.createElement("h3", {
+																className: "block-title"
+															}, Object(m["formatMessage"])({
+																id: "Telegram \u8ba8\u8bba\u7ec4"
+															})), u.a.createElement("div", {
+																className: "block-options"
+															}, u.a.createElement("a", {
+																href: r.telegram_discuss_link,
+																target: "_blank",
 																className: "me-2 mb-1 btn btn-falcon-primary"
 															}, Object(m["formatMessage"])({
-																id: "\u7acb\u5373\u5f00\u59cb"
-															})))))) : u.a.createElement(u.a.Fragment, null), r
-																.telegram_discuss_link ? u.a.createElement("div", {
-																	className: "block block-rounded card join_telegram_disscuss"
+																id: "\u7acb\u5373\u52a0\u5165"
+															}))))) : u.a.createElement(u.a.Fragment, null), u.a
+																.createElement("div", {
+																	className: "block block-rounded card "
 																}, u.a.createElement("div", {
 																	className: "block-header bcard-header"
 																}, u.a.createElement("h3", {
 																	className: "block-title"
 																}, Object(m["formatMessage"])({
-																	id: "Telegram \u8ba8\u8bba\u7ec4"
+																	id: "\u91cd\u7f6e\u8ba2\u9605\u4fe1\u606f"
 																})), u.a.createElement("div", {
 																	className: "block-options"
-																}, u.a.createElement("a", {
-																	href: r.telegram_discuss_link,
-																	target: "_blank",
-																	className: "me-2 mb-1 btn btn-falcon-primary"
+																})), u.a.createElement("div", {
+																	className: "block-content"
+																}, u.a.createElement("div", {
+																	className: "row push"
+																}, u.a.createElement("div", {
+																	className: "col-md-12"
+																}, u.a.createElement("div", {
+																	className: "alert alert-warning mb-3",
+																	role: "alert"
+																},
+																	"\u5f53\u4f60\u7684\u8ba2\u9605\u5730\u5740\u6216\u8d26\u6237\u53d1\u751f\u6cc4\u6f0f\u88ab\u4ed6\u4eba\u6ee5\u7528\u65f6\uff0c\u53ef\u4ee5\u5728\u6b64\u91cd\u7f6e\u8ba2\u9605\u4fe1\u606f\u3002\u907f\u514d\u5e26\u6765\u4e0d\u5fc5\u8981\u7684\u635f\u5931\u3002"
+																), u.a.createElement(i["a"], {
+																	type: "danger",
+																	onClick: () => this.resetSecurity()
 																}, Object(m["formatMessage"])({
-																	id: "\u7acb\u5373\u52a0\u5165"
-																}))))) : u.a.createElement(u.a.Fragment, null), u.a
-																	.createElement("div", {
-																		className: "block block-rounded card "
-																	}, u.a.createElement("div", {
-																		className: "block-header bcard-header"
-																	}, u.a.createElement("h3", {
-																		className: "block-title"
-																	}, Object(m["formatMessage"])({
-																		id: "\u91cd\u7f6e\u8ba2\u9605\u4fe1\u606f"
-																	})), u.a.createElement("div", {
-																		className: "block-options"
-																	})), u.a.createElement("div", {
-																		className: "block-content"
-																	}, u.a.createElement("div", {
-																		className: "row push"
-																	}, u.a.createElement("div", {
-																		className: "col-md-12"
-																	}, u.a.createElement("div", {
-																		className: "alert alert-warning mb-3",
-																		role: "alert"
-																	},
-																		"\u5f53\u4f60\u7684\u8ba2\u9605\u5730\u5740\u6216\u8d26\u6237\u53d1\u751f\u6cc4\u6f0f\u88ab\u4ed6\u4eba\u6ee5\u7528\u65f6\uff0c\u53ef\u4ee5\u5728\u6b64\u91cd\u7f6e\u8ba2\u9605\u4fe1\u606f\u3002\u907f\u514d\u5e26\u6765\u4e0d\u5fc5\u8981\u7684\u635f\u5931\u3002"
-																	), u.a.createElement(i["a"], {
-																		type: "danger",
-																		onClick: () => this.resetSecurity()
-																	}, Object(m["formatMessage"])({
-																		id: "\u91cd\u7f6e"
-																	})))))))))))
+																	id: "\u91cd\u7f6e"
+																})))))))))))
 			}
 		}
 		t["default"] = Object(p["c"])(e => {
