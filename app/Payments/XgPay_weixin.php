@@ -2,7 +2,7 @@
 
 namespace App\Payments;
 
-class XgPay {
+class XgPay_weixin {
     public function __construct($config)
     {
         $this->config = $config;
