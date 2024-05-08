@@ -840,7 +840,7 @@
 				return (Object(l["i"])() || Object(l["j"])()) && (t.push({
 					title: "Shadowrocket",
 					href: "shadowrocket://add/sub://" + window.btoa(e).replace(/\+/g, "-").replace(/\//g, "_")
-						.replace(/=+$/, "") + "?remark=" + window.settings.title
+						.replace(/=+$/, "") + "?remark=" + window.settings.title + "&allowInsecure=1"
 				}), t.push({
 					title: "QuantumultX",
 					href: "quantumult-x:///update-configuration?remote-resource=" +
