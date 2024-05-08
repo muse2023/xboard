@@ -28,7 +28,7 @@ class Shadowrocket
         $download = round($user['d'] / (1024*1024*1024), 2);
         $totalTraffic = round($user['transfer_enable'] / (1024*1024*1024), 2);
         $expiredDate = date('Y-m-d', $user['expired_at']);
-        $uri .= "🍚Used=↑:{$upload}GB,↓:{$download}GB,⚡Limit:{$totalTraffic}GB,🆘Time:{$expiredDate}\r\n";        
+        $uri .= "🍚Used=↑:{$upload}GB,↓:{$download}GB,⚡Limit:{$totalTraffic}GB💡Time:{$expiredDate}\r\n";
         foreach ($servers as $item) {
             if ($item['type'] === 'shadowsocks') {
                 $uri .= self::buildShadowsocks($user['uuid'], $item);
