@@ -839,8 +839,7 @@
 					t = [];
 				return (Object(l["i"])() || Object(l["j"])()) && (t.push({
 					title: "Shadowrocket",
-					href: "shadowrocket://add/sub://" + window.btoa(e +
-						"&flag=shadowrocket").replace(/\+/g, "-").replace(/\//g, "_")
+					href: "shadowrocket://add/sub://" + window.btoa(e).replace(/\+/g, "-").replace(/\//g, "_")
 						.replace(/=+$/, "") + "?remark=" + window.settings.title
 				}), t.push({
 					title: "QuantumultX",
