@@ -51,18 +51,21 @@ class ConfigController extends Controller
 
     public function setTelegramWebhook(Request $request)
     {
-        // 判断站点网址
-        $app_url = admin_setting('app_url');
-        if(blank($app_url)) return $this->fail([422, '请先设置站点网址']);
-        $hookUrl = $app_url .'/api/v1/guest/telegram/webhook?' . http_build_query([
+        // 获取站点的基础网址
+        $appUrl = url('/');
+        // 拼接 Webhook 的终端地址
+        $hookUrl = $appUrl . '/api/v1/guest/telegram/webhook?' . http_build_query([
             'access_token' => md5(admin_setting('telegram_bot_token', $request->input('telegram_bot_token')))
         ]);
+        // 创建 TelegramService 实例
         $telegramService = new TelegramService($request->input('telegram_bot_token'));
+        // 验证 Telegram Bot Token 的有效性
         $telegramService->getMe();
+        // 设置 Webhook
         $telegramService->setWebhook($hookUrl);
         return $this->success(true);
     }
-
+    
     public function fetch(Request $request)
     {
         $key = $request->input('key');
