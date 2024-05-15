@@ -24,10 +24,13 @@ class ClashMeta
         $user = $this->user;
         $appName = admin_setting('app_name', 'XBoard');
         $defaultConfig = base_path() . '/resources/rules/default.clash.yaml';
-        $customConfig = base_path() . '/resources/rules/custom.ruleset.clash.yaml';
+        $customClashConfig = base_path() . '/resources/rules/custom.clash.yaml';
+        $customConfig = base_path() . '/resources/rules/custom.clashmeta.yaml';
         if (\File::exists($customConfig)) {
             $config = Yaml::parseFile($customConfig);
-        } else {
+        } elseif(\File::exists($customClashConfig)) {
+            $config = Yaml::parseFile($customClashConfig);
+        } else{
             $config = Yaml::parseFile($defaultConfig);
         }
         $proxy = [];
@@ -311,6 +314,7 @@ class ClashMeta
                     $array['obfs'] = 'salamander';
                     $array['obfs-password'] = $server['server_key'];
                 }
+                if(isset($server['ports'])) $array['ports'] = $server['ports'];
                 break;
         }
         
