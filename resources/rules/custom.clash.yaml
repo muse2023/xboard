@@ -37,19 +37,19 @@ proxies:
 
 proxy-groups:
   - { name: "🥢 选择节点", type: select, proxies: ["🇭🇰 香港|Auto","🇨🇳 台湾|Auto","🇸🇬 新加坡|Auto","🇯🇵 日本|Auto","🇺🇸 美国|Auto","♻️ Auto"] }
-  - { name: "♻️ Auto", type: fallback, proxies: [/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/], url: "http://www.gstatic.com/generate_204", interval: 300 }
-  - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
-  - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
-  - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]} 
-  - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
-  - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}    
-  - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
-  - { name: "🎯 直连网站", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}
-  - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/美国/,/英国/,/土耳其/]}  
+  - { name: "♻️ Auto", type: fallback, proxies: [/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/], url: "http://www.gstatic.com/generate_204", interval: 300 }
+  - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
+  - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
+  - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]} 
+  - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
+  - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}    
+  - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
+  - { name: "🎯 直连网站", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
+  - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}  
   - { name: "🇭🇰 香港|Auto", type: fallback, proxies: [/香港/], url: 'http://www.gstatic.com/generate_204', interval: 300 }    
   - { name: "🇨🇳 台湾|Auto", type: fallback, proxies: [/台湾/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
   - { name: "🇸🇬 新加坡|Auto", type: fallback, proxies: [/新加坡/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
-  - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
+  - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/,/Hysteria/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
   - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }              
   
 rules:
