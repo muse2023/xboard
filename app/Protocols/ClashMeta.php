@@ -8,7 +8,7 @@ use Symfony\Component\Yaml\Yaml;
 
 class ClashMeta
 {
-    public $flag = 'meta,verge';
+    public $flag = 'mihomo,meta,verge';
     private $servers;
     private $user;
 

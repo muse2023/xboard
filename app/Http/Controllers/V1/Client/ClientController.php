@@ -158,13 +158,38 @@ class ClientController extends Controller
                 'name' => "Hysteria2未下发！",
             ]));
         }
-        if (!(int)admin_setting('show_info_to_server_enable', 0)) return;
         $useTraffic = $user['u'] + $user['d'];
         $totalTraffic = $user['transfer_enable'];
         $remainingTraffic = Helper::trafficConvert($totalTraffic - $useTraffic);
         $expiredDate = $user['expired_at'] ? date('Y-m-d', $user['expired_at']) : '长期有效';
         $userService = new UserService();
         $resetDay = $userService->getResetDay($user);
+        $currentTimestamp = time();
+        $expiredTimestamp = $user['expired_at'];
+
+        if  ($currentTimestamp > $expiredTimestamp) {
+            //套餐已到期
+            array_unshift($servers, array_merge($servers[0], [
+                'name' => "提示：已到期",
+            ]));
+            // 提醒网址
+            array_unshift($servers, array_merge($servers[0], [
+                'name' => "网址:info.bigmeok.me",
+            ]));
+            $servers = [$servers[0]];
+            return;
+        }
+        if ($useTraffic >= $totalTraffic){
+            // 流量已用尽
+            array_unshift($servers, array_merge($servers[0], [
+                'name' => "提示：流量不足",
+            ]));
+            // 提醒网址            
+            array_unshift($servers, array_merge($servers[0], [
+                'name' => "网址:info.bigmeok.me",
+            ]));
+        }
+        if (!(int)admin_setting('show_info_to_server_enable', 0)) return;
         // 筛选提示
         array_unshift($servers, array_merge($servers[0], [
             'name' => "套餐到期：{$expiredDate}",
