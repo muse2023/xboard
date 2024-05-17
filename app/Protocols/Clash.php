@@ -22,11 +22,6 @@ class Clash
         $servers = $this->servers;
         $user = $this->user;
         $appName = admin_setting('app_name', 'XBoard');
-        $currentTimestamp = time();
-        $expiredTimestamp = $user['expired_at'];
-        if  ($currentTimestamp > $expiredTimestamp) {
-            $appName.= ":套餐到期啦！";
-        }
         $defaultConfig = base_path() . '/resources/rules/default.clash.yaml';
         $customConfig = base_path() . '/resources/rules/custom.clash.yaml';
         if (\File::exists($customConfig)) {
