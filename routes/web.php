@@ -26,15 +26,7 @@ use Illuminate\Http\Request;
 // });
 
 
-Route::get('/' . config('index'), function (Request $request) {
-    $userAgent = $request->header('User-Agent');
-
-    // 检测是否是微信内置浏览器或者 QQ 内置浏览器
-    if (stripos($userAgent, 'MicroMessenger') !== false || stripos($userAgent, 'QQ/') !== false) {
-        // 如果是微信或 QQ 浏览器，显示 mask.php 视图
-        return view('mask');
-    } else {
-        // 否则，显示 index 视图
+Route::get('/' . config('index'), function () {
         return view('index', [
             'title' => config('v2board.app_name', 'BigMe'),
             'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
@@ -44,10 +36,7 @@ Route::get('/' . config('index'), function (Request $request) {
             'version' => config('app.version'),
             'logo' => config('v2board.logo'),
         ]);
-    }
 });
-
-
 
 //特性
 Route::get('/features' . config('features'), function () {
