@@ -91,7 +91,7 @@
 <a id="priceMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " hre role="button" aria-expanded="false">价格</a>
 
 <div class="hs-sub-menu dropdown-menu" aria-labelledby="priceMegaMenu" style="min-width: 14rem; box-shadow: 0px 7px 14px 6px #8d8d8d2e;">
-<a class="dropdown-item " href="pricing">产品定价</a>
+<!-- <a class="dropdown-item " href="pricing">产品定价</a> -->
 <a class="dropdown-item " href="special-offers">特别优惠</a>
 </div>
 
@@ -114,11 +114,11 @@
 <a id="introMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " hre role="button" aria-expanded="false">介绍</a>
 
 <div class="hs-sub-menu dropdown-menu" aria-labelledby="introMegaMenu" style="min-width: 14rem; box-shadow: 0px 7px 14px 6px #8d8d8d2e;">
-<a class="dropdown-item " href="compatible-apps">兼容客户端</a>
-<a class="dropdown-item " href="protocol-use">网络协议</a>
+<!-- <a class="dropdown-item " href="compatible-apps">兼容客户端</a> -->
+<!-- <a class="dropdown-item " href="protocol-use">网络协议</a> -->
 <a class="dropdown-item " href="streaming ">流媒体解锁</a>
 <a class="dropdown-item " href="referral-program ">推荐计划</a>
-<a class="dropdown-item " href="video-creator ">视频创作者计划</a>
+<!-- <a class="dropdown-item " href="video-creator ">视频创作者计划</a> -->
 </div>
 
 </li>

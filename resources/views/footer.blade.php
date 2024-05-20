@@ -33,8 +33,8 @@
 <h5 class="mb-3">介绍</h5>
 
 <ul class="list-unstyled list-py-1 mb-0">
-<li><a class="link-sm link-secondary" href="./features ">{{$title}} 特性</a></li>
-<li><a class="link-sm link-secondary" href="./protocol-use ">协议使用</a></li>
+<!-- <li><a class="link-sm link-secondary" href="./features ">{{$title}} 特性</a></li> -->
+<!-- <li><a class="link-sm link-secondary" href="./protocol-use ">协议使用</a></li> -->
 <li><a class="link-sm link-secondary" href="./streaming ">流媒体解锁</a></li>
 <li><a class="link-sm link-secondary" href="./pricing ">价格</a></li>
 </ul>
@@ -57,7 +57,7 @@
 <h5 class="mb-3">资源</h5>
 
 <ul class="list-unstyled list-py-1 mb-5">
-<li><a class="link-sm link-secondary" href="./compatible-apps ">兼容客户端</a></li>
+<!-- <li><a class="link-sm link-secondary" href="./compatible-apps ">兼容客户端</a></li> -->
 <li><a class="link-sm link-secondary" href="./special-offers "><i class="bi bi-gift-fill me-1"></i> 特别优惠</a></li>
 <li><a class="link-sm link-secondary" href="./video-creator ">视频创作者计划</a></li>
 <li><a class="link-sm link-secondary" href="https://info.bigmeok.me/">备用网址/软件集合</a> <span class="badge bg-warning text-dark rounded-pill ms-1">请收藏</span></li>

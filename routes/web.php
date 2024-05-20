@@ -39,30 +39,30 @@ Route::get('/' . config('index'), function () {
 });
 
 //特性
-Route::get('/features' . config('features'), function () {
-    return view('features', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/features' . config('features'), function () {
+//     return view('features', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //价格
-Route::get('/pricing' . config('pricing'), function () {
-    return view('pricing', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/pricing' . config('pricing'), function () {
+//     return view('pricing', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 
 //特别优惠
@@ -107,32 +107,32 @@ Route::get('/sla' . config('sla'), function () {
 });
 
 //兼容客户端
-Route::get('/compatible-apps' . config('compatible-apps'), function () {
-    return view('compatible-apps', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'url' => config('v2board.app_url'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/compatible-apps' . config('compatible-apps'), function () {
+//     return view('compatible-apps', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'url' => config('v2board.app_url'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //协议使用
-Route::get('/protocol-use' . config('protocol-use'), function () {
-    return view('protocol-use', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'url' => config('v2board.app_url'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/protocol-use' . config('protocol-use'), function () {
+//     return view('protocol-use', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'url' => config('v2board.app_url'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //流媒体解锁
 Route::get('/streaming' . config('streaming'), function () {
@@ -163,18 +163,18 @@ Route::get('/referral-program' . config('referral-program'), function () {
 });
 
 //视频创作者计划
-Route::get('/video-creator' . config('video-creator'), function () {
-    return view('video-creator', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'url' => config('v2board.app_url'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/video-creator' . config('video-creator'), function () {
+//     return view('video-creator', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'url' => config('v2board.app_url'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //问题和答案 就是faq
 Route::get('/faq' . config('faq'), function () {
@@ -208,20 +208,20 @@ Route::get('/contact-us' . config('contact-us'), function () {
 });
 
 //关于我们
-Route::get('/about-us' . config('about-us'), function () {
-    return view('about-us', [
-        'title' => config('v2board.app_name', 'BigMe'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/about-us' . config('about-us'), function () {
+//     return view('about-us', [
+//         'title' => config('v2board.app_name', 'BigMe'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'url' => config('v2board.app_url'),
+//         'telegrampindao' => 'https://t.me/bigme_pro',
+//         'telegramqunliao' => 'https://t.me/bigme_public',
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //隐私政策
 Route::get('/privacy' . config('privacy'), function () {

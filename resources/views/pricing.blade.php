@@ -3,8 +3,146 @@
 <title>产品价格 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}</title>
 <meta property="og:title" content="产品价格 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}">
 <main id="content" role="main">
-	<div class="overflow-hidden">
+	<div class="container content-space-t-4 content-space-t-lg-5 content-space-b-1 content-space-b-lg-1">
+		<div class="row justify-content-lg-between align-items-lg-center mb-10">
+			<div class="col-md-6 col-lg-5">
+				<div class="mb-5">
+					<span class="mb-2 "><i class="bi bi-file-lock2-fill"></i> 十五分钟急速工单响应
+					</span>
+					<h1 class="fw-light">高可用<b class="text-primary">加速服务</b>提供商</h1>
+					<p>为各行各业客户保护您和您的数据 加速访问 App 应用 外贸 网站 娱乐内容等等。</p>
+				</div>
+				<div class="d-grid d-sm-flex gap-3">
+					<a class="btn btn-primary btn-transition" href="/user"><b>立即使用|免费体验</b></a>
+					<a class="btn btn-link" href="https://info.bigmeok.me/app.html"><i class="bi bi-download"></i>
+						开源客户端下载 <i class="bi-chevron-right small ms-1"></i></a>
+				</div>
+				<p class="form-text small"><i class="bi bi-check-circle-fill"></i> <b>右上角控制台|祝你使用愉快特性</b> </p>
+			</div>
 
+			<div class="col-sm-7 col-md-6 d-none d-md-block">
+				<img class="img-fluid" src="assets/svg/illustrations/world.svg" alt="Image Description">
+			</div>
+		</div>
+	</div>
+	<div class="container content-space-3">
+		<div class="row justify-content-md-between align-items-sm-center">
+			<div class="col-8 col-sm-6 col-md-5 mb-5 mb-sm-0">
+				<img class="img-fluid" src="/assets/svg/illustrations/netflixhero.svg" alt="Image Description">
+			</div>
+
+			<div class="col-sm-6">
+				<div class="mb-5">
+					<h1 class="display-5 fw-light mb-3">
+						解锁流媒体
+						<br>
+						<span class="text-primary">
+							<span class="js-typedjs" data-hs-typed-options='{
+							"strings": ["Netflix", "Hulu", "HBO Now", "TVB", "Disney Plus"],
+							"typeSpeed": 90,
+							"loop": true,
+							"backSpeed": 30,
+							"backDelay": 2500
+						  }'></span>
+						</span>
+					</h1>
+					<p class="lead">我们的全球网络遍布世界各地。您可以在世界任何位置连接至 {{$title}} 网络，以最快速度访问全球受区域限制的内容和流媒体，例如 Netflix、HBO、TVB
+						等。</p>
+				</div>
+				<div class="d-grid d-md-flex gap-3 align-items-md-center">
+					<a class="btn btn-primary btn-transition" href="/user#/register">立即试用</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="overflow-hidden">
+		<div class="container content-space-2 content-space-t-lg-3">
+			<div class="row justify-content-lg-between align-items-lg-center">
+				<div class="col-lg-5 mb-9 mb-lg-0">
+
+					<div class="mb-5">
+						<h2>在任何地方观看 Netflix 电影和电视</h2>
+						<p>流畅观看 Netflix、HBO、Fox+、Disney+、 TVB 等平台上的海量电视剧和电影。通过 {{$title}} 网络，您可以：</p>
+					</div>
+
+
+					<ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
+						<li class="list-checked-item">绕过运营商限制和限速</li>
+						<li class="list-checked-item">访问全球内容，无论您在什么位置</li>
+						<li class="list-checked-item">流式传输，绝无缓冲中断</li>
+						<li class="list-checked-item">以闪电般的速度下载及上传</li>
+					</ul>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="position-relative mx-auto" data-aos="fade-up">
+
+						<figure class="device-mobile mx-auto">
+							<div class="device-mobile-frame">
+								<img class="device-mobile-img" src="/assets/img/407x867/img8.jpg"
+									alt="Image Description">
+							</div>
+						</figure>
+
+
+						<div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+							<img class="img-fluid" src="/assets/svg/components/abstractshape-2.svg" alt="SVG">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="overflow-hidden">
+		<div class="container content-space-t-lg-3 content-space-b-lg-2">
+			<div class="row justify-content-lg-between align-items-lg-center">
+				<div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
+
+					<div class="mb-5">
+						<h2>播放受版权限制的歌曲</h2>
+						<p>无论您在哪个国家，启用 {{$title}} 后就可以聆听 Spotify 等流媒体网站提供的高质量音乐。</p>
+					</div>
+
+					<h4 class="mb-3">支持的 APP</h4>
+					<div class="d-flex gap-3">
+						<a class="btn btn-icon rounded-circle" href="javascript:;" title="Spotify">
+							<img class="avatar-img" src="/assets/svg/brands/spotify-icon.svg" alt="Spotify">
+						</a>
+						<a class="btn btn-icon rounded-circle" href="javascript:;" title="Tidal">
+							<img class="avatar-img" src="/assets/svg/brands/tidal-icon.svg" alt="Tidal">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-6 order-lg-1">
+					<div class="position-relative mx-auto" data-aos="fade-up">
+
+						<figure class="device-mobile mx-auto">
+							<div class="device-mobile-frame">
+								<img class="device-mobile-img" src="/assets/img/407x867/img9.jpg" alt="Spotify">
+							</div>
+						</figure>
+
+
+						<div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+							<img class="img-fluid" src="/assets/svg/components/shape-1.svg" alt="SVG">
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="overflow-hidden">
 		<div class="position-relative bg-img-start" style="background-image: url(/assets/svg/components/card-11.svg);">
 			<div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2 content-space-b-lg-3">
 
@@ -40,19 +178,6 @@
 						</label>
 					</div>
 				</div>
-
-				<!-- <div class="d-flex justify-content-center">
-					<div class="form-check form-switch form-switch-between">
-						<label class="form-check-label form-switch-promotion">
-							<span
-								class="badge bg-soft-primary text-primary rounded-pill">年费用户享有VIP定制特权|不分等级，仅有流量多少差距</span>
-
-							</span>
-							</span>
-						</label>
-					</div>
-				</div> -->
-
 			</div>
 		</div>
 
@@ -67,7 +192,8 @@
 								<div class="mb-2">
 									<span class="fs-5 align-top text-dark fw-semi-bold">¥</span>
 									<!-- <span id="pricingCount1" class="fs-1 text-dark fw-semi-bold">6</span> -->
-									<span id="pricingCount1" class="fs-1 text-dark fw-semi-bold" data-hs-toggle-switch-item-options='{
+									<span id="pricingCount1" class="fs-1 text-dark fw-semi-bold"
+										data-hs-toggle-switch-item-options='{
 										"min": 6,
 										"max": 4
 									  }'>4</span>
@@ -79,14 +205,14 @@
 							<div class="card-body d-flex justify-content-center py-0">
 
 								<ul class="list-checked list-checked-soft-bg-primary">
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 全球Net节点</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 每日节点自动审查更新
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 全球NET</li>
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 每日自动审查更新
 									</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全解锁流媒体平台</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i>
-										全线Shadowsocks协议</li>
+										Transit网络+Hysteria2</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 45GB 流量/月</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 适用 节点可用性保证
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 条款可用性保证
 									</li>
 									<li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> 不适用 退款保障协议</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 售后支持：客服及工单
@@ -110,8 +236,8 @@
 							<div class="card-header text-center">
 								<div class="mb-2">
 									<span class="fs-5 align-top text-dark fw-semi-bold">¥</span>
-									<!-- <span id="pricingCount3" class="fs-1 text-dark fw-semi-bold">10</span> -->
-									<span id="pricingCount3" class="fs-1 text-dark fw-semi-bold" data-hs-toggle-switch-item-options='{
+									<span id="pricingCount3" class="fs-1 text-dark fw-semi-bold"
+										data-hs-toggle-switch-item-options='{
 										"min": 10,
 										"max": 8
 									  }'>8</span>
@@ -123,18 +249,18 @@
 							<div class="card-body d-flex justify-content-center py-0">
 
 								<ul class="list-checked list-checked-soft-bg-primary">
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 全球Net节点
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 全球NET
 									</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 每日节点自动审查更新
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 每日自动审查更新
 									</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全解锁流媒体平台<i
 											class="bi bi-exclamation-circle" data-bs-toggle="tooltip"
-											data-bs-html="true" title="Netflix / Hulu / HBO / BBC / Spotify 等"></i></li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 全线Shadowsocks
-										协议</li>
+											data-bs-html="true" title="Netflix / Hulu / HBO / Spotify 等"></i></li>
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i>
+										Transit网络+Hysteria2</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 150GB 流量/月
 									</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 适用 节点可用性保证
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 条款可用性保证
 									</li>
 									<li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> 不适用 退款保障协议</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 售后支持：客服及工单
@@ -158,7 +284,8 @@
 								<div class="text-white mb-2">
 									<span class="fs-5 align-top fw-semi-bold">¥</span>
 									<!-- <span id="pricingCount2" class="fs-1 fw-semi-bold">18</span> -->
-									<span id="pricingCount2" class="fs-1 fw-semi-bold" data-hs-toggle-switch-item-options='{
+									<span id="pricingCount2" class="fs-1 fw-semi-bold"
+										data-hs-toggle-switch-item-options='{
 										"min": 18,
 										"max": 16
 									  }'>16</span>
@@ -170,15 +297,16 @@
 							<div class="card-body d-flex justify-content-center py-0">
 
 								<ul class="list-checked list-checked-soft-bg-light">
-									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 全球Net节点</li>
-									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 每日节点人工审查更新</li>
+									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 全球NET</li>
+									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 人工审查更新</li>
 									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 全解锁流媒体平台 <i
 											class="bi bi-exclamation-circle" data-bs-toggle="tooltip"
-											data-bs-html="true" title="Netflix / Hulu / HBO / BBC / Spotify 等"></i></li>
-									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i>全线Shadowsocks 协议
+											data-bs-html="true" title="Netflix / Hulu / HBO / Spotify 等"></i></li>
+									<li class="mb-2 text-white"><i
+											class="bi bi-check-circle-fill"></i>Transit网络+Hysteria2
 									</li>
 									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 300GB 流量/月</li>
-									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 适用 节点可用性保证</li>
+									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 条款可用性保证</li>
 									<li class="mb-2 text-white"><i class="bi bi-x-circle-fill text-danger"></i> 不适用
 										退款保障协议</li>
 									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 全售后支持</li>
@@ -215,12 +343,13 @@
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 不限时400G流量</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 专属多对一售后</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 24小时客服服务</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全球可定制任意位置IP
+									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 付费定制线路
 									</li>
-									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 不限制设备和流量</li>
+									<li class="mb-2 text-white"><i class="bi bi-x-circle-fill text-danger"></i> 不适用
+										退款保障协议</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 特殊时期保证 <i
 											class="bi bi-exclamation-circle" data-bs-toggle="tooltip"
-											data-bs-html="true" title="可另外单独付费对接独享节点，每日人工检查节点，高sla保证"></i></li>
+											data-bs-html="true" title="可另外单独付费对接独享网络，每日人工检查网络，高sla保证"></i></li>
 								</ul>
 
 							</div>
@@ -298,7 +427,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row" class="text-dark">流媒体解锁</th>
+						<th scope="row" class="text-dark">流媒体</th>
 						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
 						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
 						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
@@ -319,30 +448,14 @@
 						<td class="table-text-center">∞</td>
 					</tr>
 					<tr>
-						<th scope="row" class="text-dark">网络节点</th>
+						<th scope="row" class="text-dark">网络</th>
 						<td class="table-text-center">全部</td>
 						<td class="table-text-center">全部</td>
 						<td class="table-text-center">全部+</td>
 						<td class="table-text-center">全部+</td>
 					</tr>
 					<tr>
-						<th scope="row" class="text-dark">BGP 优化接入</th>
-						<td class="table-text-center"><span
-								class="badge bg-soft-danger text-danger rounded-pill">不可用</span></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-					</tr>
-					<tr>
-						<th scope="row" class="text-dark">多入口</th>
-						<td class="table-text-center"><span
-								class="badge bg-soft-danger text-danger rounded-pill">不可用</span></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi-check-circle text-success me-2"></i></td>
-					</tr>
-					<tr>
-						<th scope="row" class="text-dark">流量限制</th>
+						<th scope="row" class="text-dark">用量</th>
 						<td class="table-text-center">45GB/月</td>
 						<td class="table-text-center">150GB/月</td>
 						<td class="table-text-center">300GB/月</td>
@@ -366,24 +479,6 @@
 						<td class="table-text-center"><span
 								class="badge bg-soft-primary text-primary rounded-pill">收费远程协助</span></td>
 					</tr>
-					<tr>
-						<th scope="row" class="text-dark">Shadowrocket账户</th>
-						<td class="table-text-center"><span
-								class="badge bg-soft-primary text-primary rounded-pill">年付特权</span></td>
-						<td class="table-text-center"><span
-								class="badge bg-soft-primary text-primary rounded-pill">年付特权</span></td>
-						<td class="table-text-center"><span
-								class="badge bg-soft-primary text-primary rounded-pill">年付特权</span></td>
-						<td class="table-text-center"><span
-								class="badge bg-soft-primary text-primary rounded-pill">年付特权</span></td>
-					</tr>					
-					<!-- <tr>
-						<th scope="row" class="text-dark">Shadowrocket</th>
-						<td class="table-text-center"><i class="bi bi-hourglass-bottom text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi bi-hourglass-bottom text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi bi-hourglass-bottom text-success me-2"></i></td>
-						<td class="table-text-center"><i class="bi bi-hourglass-bottom text-success me-2"></i></td>
-					</tr> -->
 					<tr>
 						<th scope="row" class="text-dark"></th>
 						<td class="table-text-center"><a href="/user#/plan"
@@ -411,8 +506,7 @@
 		<div class="row justify-content-md-center">
 			<div class="col-sm-6 col-lg-5 mb-3 mb-md-5">
 				<h4>我该如何购买订阅？</h4>
-				<p>您需要先在 {{$title}} 上注册一个账户，然后直接购买新订阅即可。您可以通过支付宝国际、虚拟货币、信用卡向我们付款。对于国际客户，您还可以联系客服，通过
-					Paypal、国际信用卡（MasterCard 和 Visa）付款。收款方可能会向您收取一定的手续费用。</p>
+				<p>您需要先在 {{$title}} 上注册一个账户，然后直接购买新订阅即可。您可以通过支付宝、微信、加密资产。对于国际客户，您还可以联系客服付款。收款方可能会向您收取一定的手续费用。</p>
 			</div>
 
 			<div class="col-sm-6 col-lg-5 mb-3 mb-md-5">
