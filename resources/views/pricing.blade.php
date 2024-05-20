@@ -345,8 +345,7 @@
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 24小时客服服务</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 付费定制线路
 									</li>
-									<li class="mb-2 text-white"><i class="bi bi-x-circle-fill text-danger"></i> 不适用
-										退款保障协议</li>
+									<li class="mb-2"><i class="bi bi-x-circle-fill text-danger"></i> 不适用 退款保障协议</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 特殊时期保证 <i
 											class="bi bi-exclamation-circle" data-bs-toggle="tooltip"
 											data-bs-html="true" title="可另外单独付费对接独享网络，每日人工检查网络，高sla保证"></i></li>

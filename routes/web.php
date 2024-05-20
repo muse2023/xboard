@@ -13,28 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 //首页的路由并且自定义
-// Route::get('/' . config('index'), function () {
-//     return view('index', [
-//         'title' => config('v2board.app_name', 'BigMe'),
-//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
-//         'background_url' => config('v2board.frontend_background_url'),
-//         'version' => config('app.version'),
-//         'logo' => config('v2board.logo'),
-//     ]);
-// });
-
-
 Route::get('/' . config('index'), function () {
         return view('index', [
-            'title' => config('v2board.app_name', 'BigMe'),
-            'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-            'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-            'theme_color' => config('v2board.frontend_theme_color', 'default'),
-            'background_url' => config('v2board.frontend_background_url'),
-            'version' => config('app.version'),
-            'logo' => config('v2board.logo'),
+        'title' => config('v2board.app_name', 'BigMe'),
+        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+        'theme_color' => config('v2board.frontend_theme_color', 'default'),
+        'background_url' => config('v2board.frontend_background_url'),
+        'version' => config('app.version'),
+        'logo' => config('v2board.logo')
         ]);
 });
 

@@ -21,7 +21,7 @@
 <h5 class="mb-3">团队</h5>
 
 <ul class="list-unstyled list-py-1 mb-0">
-<li><a class="link-sm link-secondary" href="./about-us ">关于我们</a></li>
+<!-- <li><a class="link-sm link-secondary" href="./about-us ">关于我们</a></li> -->
 <li><a class="link-sm link-secondary" href="./contact-us ">联系我们</a></li>
 <li><a class="link-sm link-secondary" href="./referral-program ">推荐计划</a> <span class="badge bg-warning text-dark rounded-pill ms-1">诚邀加入</span></li>
 <li><a class="link-sm link-secondary" href="./sla ">服务水平保障</a></li>
@@ -36,7 +36,7 @@
 <!-- <li><a class="link-sm link-secondary" href="./features ">{{$title}} 特性</a></li> -->
 <!-- <li><a class="link-sm link-secondary" href="./protocol-use ">协议使用</a></li> -->
 <li><a class="link-sm link-secondary" href="./streaming ">流媒体解锁</a></li>
-<li><a class="link-sm link-secondary" href="./pricing ">价格</a></li>
+<!-- <li><a class="link-sm link-secondary" href="./pricing ">价格</a></li> -->
 </ul>
 
 </div>
@@ -47,7 +47,7 @@
 <ul class="list-unstyled list-py-1 mb-0">
 <li><a class="link-sm link-secondary" href="/user#/knowledge">使用文档</a> <i class="bi bi-exclamation-circle" data-bs-toggle="tooltip" data-bs-html="true" title="需登录状态下查看"></i></li>
 <li><a class="link-sm link-secondary" href="./faq ">常见问题</a></li>
-<li><a class="link-sm link-secondary" href="http://123.207.66.230:3001/status/sla">BigMe Status</a></li>
+<!-- <li><a class="link-sm link-secondary" href="http://123.207.66.230:3001/status/sla">BigMe Status</a></li> -->
 <!--<li><a class="link-sm link-secondary" href="https://monitor.bigme.pro/">节点探针</a></li>-->
 </ul>
 
@@ -59,8 +59,8 @@
 <ul class="list-unstyled list-py-1 mb-5">
 <!-- <li><a class="link-sm link-secondary" href="./compatible-apps ">兼容客户端</a></li> -->
 <li><a class="link-sm link-secondary" href="./special-offers "><i class="bi bi-gift-fill me-1"></i> 特别优惠</a></li>
-<li><a class="link-sm link-secondary" href="./video-creator ">视频创作者计划</a></li>
-<li><a class="link-sm link-secondary" href="https://info.bigmeok.me/">备用网址/软件集合</a> <span class="badge bg-warning text-dark rounded-pill ms-1">请收藏</span></li>
+<!-- <li><a class="link-sm link-secondary" href="./video-creator ">视频创作者计划</a></li> -->
+<li><a class="link-sm link-secondary" href="https://info.bigmeok.me/">咨询引导</a> <span class="badge bg-warning text-dark rounded-pill ms-1">请收藏</span></li>
 </ul>
 
 </div>
