@@ -13,8 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 //首页的路由并且自定义
-Route::get('/' . config('index'), function () {
-        return view('index', [
+Route::get('/' . config('pricing'), function () {
+        return view('pricing', [
         'title' => config('v2board.app_name', 'BigMe'),
         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
