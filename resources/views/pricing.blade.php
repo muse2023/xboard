@@ -1,6 +1,6 @@
 @include('header')
 
-<title>产品价格 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}</title>
+<title>高可用性服务商 | {{$title}}</title>
 <meta property="og:title" content="产品价格 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}">
 <main id="content" role="main">
 	<div class="container content-space-t-4 content-space-t-lg-5 content-space-b-1 content-space-b-lg-1">

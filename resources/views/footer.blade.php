@@ -60,7 +60,7 @@
 <!-- <li><a class="link-sm link-secondary" href="./compatible-apps ">兼容客户端</a></li> -->
 <li><a class="link-sm link-secondary" href="./special-offers "><i class="bi bi-gift-fill me-1"></i> 特别优惠</a></li>
 <!-- <li><a class="link-sm link-secondary" href="./video-creator ">视频创作者计划</a></li> -->
-<li><a class="link-sm link-secondary" href="https://info.bigmeok.me/">咨询引导</a> <span class="badge bg-warning text-dark rounded-pill ms-1">请收藏</span></li>
+<li><a class="link-sm link-secondary" href="https://info.bigmeok.me/"  target="_blank">咨询引导</a> <span class="badge bg-warning text-dark rounded-pill ms-1">请收藏</span></li>
 </ul>
 
 </div>
