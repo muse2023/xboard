@@ -48,8 +48,8 @@ class PaymentService
 
         return $this->payment->pay([
             'notify_url' => $notifyUrl,
-            // 'return_url' => admin_setting('app_url') . '/user#/order/' . $order['trade_no'],
-            'return_url' => 'https://pay-jump.pages.dev',
+            // 'return_url' => admin_setting('app_url') . '/#/order/' . $order['trade_no'],
+            'return_url' => 'https://happy.bigmeok.me/' . $_SERVER['HTTP_REFERER'] . '#/order/' . $order['trade_no'],
             'trade_no' => $order['trade_no'],
             'total_amount' => $order['total_amount'],
             'user_id' => $order['user_id'],
