@@ -24,39 +24,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="container content-space-3">
-		<div class="row justify-content-md-between align-items-sm-center">
-			<div class="col-8 col-sm-6 col-md-5 mb-5 mb-sm-0">
-				<img class="img-fluid" src="/assets/svg/illustrations/netflixhero.svg" alt="Image Description">
-			</div>
-
-			<div class="col-sm-6">
-				<div class="mb-5">
-					<h1 class="display-5 fw-light mb-3">
-						解锁流媒体
-						<br>
-						<span class="text-primary">
-							<span class="js-typedjs" data-hs-typed-options='{
-							"strings": ["Netflix", "Hulu", "HBO Now", "TVB", "Disney Plus"],
-							"typeSpeed": 90,
-							"loop": true,
-							"backSpeed": 30,
-							"backDelay": 2500
-						  }'></span>
-						</span>
-					</h1>
-					<p class="lead">我们的全球网络遍布世界各地。您可以在世界任何位置连接至 {{$title}} 网络，以最快速度访问全球受区域限制的内容和流媒体，例如 Netflix、HBO、TVB
-						等。</p>
-				</div>
-				<div class="d-grid d-md-flex gap-3 align-items-md-center">
-					<a class="btn btn-primary btn-transition" href="/user#/register">立即试用</a>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
 
 	<div class="overflow-hidden">
 		<div class="container content-space-2 content-space-t-lg-3">
