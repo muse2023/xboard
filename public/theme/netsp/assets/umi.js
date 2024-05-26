@@ -24779,8 +24779,7 @@
 						dataIndex: "u",
 						key: "u",
 						align: "right",
-						render: (e, t) => t.server_rate ? Object(p["b"])(parseInt(e) / t
-							.server_rate) : 0
+						render: (e, t) => Object(p["b"])(parseInt(e))
 					}, {
 						title: Object(v["formatMessage"])({
 							id: "\u5b9e\u9645\u4e0b\u884c"
@@ -24788,8 +24787,7 @@
 						dataIndex: "d",
 						key: "d",
 						align: "right",
-						render: (e, t) => t.server_rate ? Object(p["b"])(parseInt(e) / t
-							.server_rate) : 0
+						render: (e, t) => Object(p["b"])(parseInt(e))
 					}, {
 						title: Object(v["formatMessage"])({
 							id: "\u6263\u8d39\u500d\u7387"
@@ -24820,7 +24818,7 @@
 						align: "right",
 						fixed: "right",
 						render: (e, t) => {
-							return Object(p["b"])(parseInt(t.u) + parseInt(t.d))
+							return Object(p["b"])((parseInt(t.u) + parseInt(t.d)) * t.server_rate);
 						}
 					}];
 				return u.a.createElement(f["a"], o()({}, this.props, {
