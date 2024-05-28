@@ -56,19 +56,19 @@ proxy-groups:
     - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
 
 rule-providers:
-    Direct: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/muse2023/bigme_ruleset/main/Bigme_Direct.yaml', interval: 86400, path: ./ruleset/Bigme_Direct.yaml }
-    Proxy: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/muse2023/bigme_ruleset/main/Bigme_Proxy.yaml', interval: 86400, path: ./ruleset/Bigme_Proxy.yaml }
-    Netflix: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml', interval: 86400, path: ./ruleset/Netflix.yaml }
-    Disney: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml', interval: 86400, path: ./ruleset/Disney.yaml }
-    BiliBili: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml', interval: 86400, path: ./ruleset/BiliBili.yaml }
-    Game: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml', interval: 86400, path: ./ruleset/Game.yaml }
-    Google: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml', interval: 86400, path: ./ruleset/Google.yaml }
-    YouTube: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yaml }    
-    Telegram: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml', interval: 86400, path: ./ruleset/Telegram.yaml }
-    Microsoft: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml', interval: 86400, path: ./ruleset/Microsoft.yaml }
-    Apple: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml', interval: 86400, path: ./ruleset/Apple.yaml }
-    GlobalMedia: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml', interval: 86400, path: ./ruleset/GlobalMedia.yaml }
-    SteamCN: { type: http, behavior: classical, url: 'https://gh-proxy.com/https://raw.githubusercontent.com/linger040831/rulses/main/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yaml }
+    Direct: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Bigme_Direct.yaml', interval: 86400, path: ./ruleset/Bigme_Direct.yaml }
+    Proxy: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Bigme_Proxy.yaml', interval: 86400, path: ./ruleset/Bigme_Proxy.yaml }
+    Netflix: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Netflix_Classical.yaml', interval: 86400, path: ./ruleset/Netflix.yaml }
+    Disney: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Disney.yaml', interval: 86400, path: ./ruleset/Disney.yaml }
+    BiliBili: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/BiliBili.yaml', interval: 86400, path: ./ruleset/BiliBili.yaml }
+    Game: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Game.yaml', interval: 86400, path: ./ruleset/Game.yaml }
+    Google: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Google_No_Resolve.yaml', interval: 86400, path: ./ruleset/Google.yaml }
+    YouTube: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yaml }    
+    Telegram: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Telegram.yaml', interval: 86400, path: ./ruleset/Telegram.yaml }
+    Microsoft: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Microsoft.yaml', interval: 86400, path: ./ruleset/Microsoft.yaml }
+    Apple: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/Apple_Classical.yaml', interval: 86400, path: ./ruleset/Apple.yaml }
+    GlobalMedia: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/GlobalMedia_Classical_No_Resolve.yaml', interval: 86400, path: ./ruleset/GlobalMedia.yaml }
+    SteamCN: { type: http, behavior: classical, url: 'https://ruleset-happy.oss-cn-hongkong.aliyuncs.com/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yaml }
 
 rules:
     # 自定义规则

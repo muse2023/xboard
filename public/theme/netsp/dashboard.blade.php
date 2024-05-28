@@ -9,6 +9,7 @@
     @if (file_exists(public_path("/theme/{$theme}/assets/custom.css")))
         <link rel="stylesheet" href="/theme/{{$theme}}/assets/custom.css?v={{$version}}">
     @endif
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9d0c3637-d6cf-442e-952e-b1eeaed90dc1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     @php ($colors = [
