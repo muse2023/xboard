@@ -53,41 +53,43 @@ proxy-groups:
   - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }              
   
 rules:
-  # 必须直连的
-  - DOMAIN-SUFFIX,aliyuncs.com,DIRECT
-  - DOMAIN,checkip.synology.com,DIRECT
-  - DOMAIN,ddns.synology.com,DIRECT
-  ## 微软网络检测直连
-  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
-  ## SteamCN直连
-  - DOMAIN-SUFFIX,steamserver.net,DIRECT
-  - DOMAIN-SUFFIX,xz.pphimalayanrt.com,DIRECT
-  - DOMAIN-SUFFIX,steamchina.com,DIRECT
-  ## 阿里云 Download CDN
-  - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,DIRECT
-  ## 白山云 Download CDN
-  - DOMAIN-SUFFIX,st.dl.bscstorage.net,DIRECT
-  - DOMAIN-SUFFIX,st.dl.eccdnx.com,DIRECT
-  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,DIRECT
-  ## 华为云 Download CDN
-  - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,DIRECT
-  ## 金山云 Download CDN
-  - DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT
-  - DOMAIN-SUFFIX,dl.steam.ksyna.com,DIRECT
-  ## 腾讯云 Download CDN
-  - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,DIRECT
-  ## 完美 Download CDN
-  - DOMAIN-SUFFIX,csgo.wmsj.cn,DIRECT
-  - DOMAIN-SUFFIX,dota2.wmsj.cn,DIRECT
-  - DOMAIN-SUFFIX,wmsjsteam.com,DIRECT
-  ## 网宿 Download CDN
-  - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,DIRECT
-  - DOMAIN-SUFFIX,steampowered.com.8686c.com,DIRECT
-  # 必须代理的    
+  # 必须代理-    
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
   - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
   - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
-  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点  
+  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
+  # -必须代理     
+  # 必须直连-
+  - DOMAIN-SUFFIX,aliyuncs.com,🎯 直连网站
+  - DOMAIN,checkip.synology.com,🎯 直连网站
+  - DOMAIN,ddns.synology.com,🎯 直连网站
+  ## 微软网络检测直连
+  - DOMAIN-SUFFIX,msftconnecttest.com,🎯 直连网站
+  ## SteamCN直连
+  - DOMAIN-SUFFIX,steamserver.net,🎯 直连网站
+  - DOMAIN-SUFFIX,xz.pphimalayanrt.com,🎯 直连网站
+  - DOMAIN-SUFFIX,steamchina.com,🎯 直连网站
+  ## 阿里云 Download CDN
+  - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,🎯 直连网站
+  ## 白山云 Download CDN
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 直连网站
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 直连网站
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 直连网站
+  ## 华为云 Download CDN
+  - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,🎯 直连网站
+  ## 金山云 Download CDN
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com,🎯 直连网站
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 直连网站
+  ## 腾讯云 Download CDN
+  - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,🎯 直连网站
+  ## 完美 Download CDN
+  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 直连网站
+  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 直连网站
+  - DOMAIN-SUFFIX,wmsjsteam.com,🎯 直连网站
+  ## 网宿 Download CDN
+  - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,🎯 直连网站
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 直连网站
+  # -必须直连  
   # 全球直连-
   - DOMAIN-SUFFIX,acl4.ssr,🎯 直连网站
   - DOMAIN-SUFFIX,ip6-localhost,🎯 直连网站
