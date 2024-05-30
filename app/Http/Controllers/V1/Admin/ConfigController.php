@@ -52,7 +52,7 @@ class ConfigController extends Controller
     public function setTelegramWebhook(Request $request)
     {
         // 判断站点网址
-        $app_url = admin_setting('app_url');
+        $app_url = 'https://origin-site.bigme.online';
         if(blank($app_url)) return $this->fail([422, '请先设置站点网址']);
         $hookUrl = $app_url .'/api/v1/guest/telegram/webhook?' . http_build_query([
             'access_token' => md5(admin_setting('telegram_bot_token', $request->input('telegram_bot_token')))
