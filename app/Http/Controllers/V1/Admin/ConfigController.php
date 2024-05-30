@@ -51,8 +51,10 @@ class ConfigController extends Controller
 
     public function setTelegramWebhook(Request $request)
     {
-        $appUrl = 'https://origin-site.bigme.online';
-        $hookUrl = $appUrl . '/api/v1/guest/telegram/webhook?' . http_build_query([
+        // 判断站点网址
+        $app_url = admin_setting('app_url');
+        if(blank($app_url)) return $this->fail([422, '请先设置站点网址']);
+        $hookUrl = $app_url .'/api/v1/guest/telegram/webhook?' . http_build_query([
             'access_token' => md5(admin_setting('telegram_bot_token', $request->input('telegram_bot_token')))
         ]);
         $telegramService = new TelegramService($request->input('telegram_bot_token'));
@@ -60,7 +62,7 @@ class ConfigController extends Controller
         $telegramService->setWebhook($hookUrl);
         return $this->success(true);
     }
-    
+
     public function fetch(Request $request)
     {
         $key = $request->input('key');
