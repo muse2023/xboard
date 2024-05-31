@@ -370,22 +370,32 @@ rules:
   - DOMAIN-SUFFIX,adguard.org,🥢 选择节点
   - DOMAIN-SUFFIX,bit.no.com,🥢 选择节点
   - DOMAIN-SUFFIX,btlibrary.me,🥢 选择节点
-  # AI  
+  # Openai  
+  - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
+  - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
   - DOMAIN-SUFFIX,ai.com,🥢 选择节点
+  - DOMAIN-SUFFIX,algolia.net,🥢 选择节点
+  - DOMAIN-SUFFIX,api.statsig.com,🥢 选择节点
   - DOMAIN-SUFFIX,auth0.com,🥢 选择节点
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🥢 选择节点
+  - DOMAIN-SUFFIX,chatgpt.com,🥢 选择节点
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🥢 选择节点
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🥢 选择节点
   - DOMAIN-SUFFIX,events.statsigapi.net,🥢 选择节点
   - DOMAIN-SUFFIX,featuregates.org,🥢 选择节点
+  - DOMAIN-SUFFIX,host.livekit.cloud,🥢 选择节点
   - DOMAIN-SUFFIX,identrust.com,🥢 选择节点
   - DOMAIN-SUFFIX,intercom.io,🥢 选择节点
   - DOMAIN-SUFFIX,intercomcdn.com,🥢 选择节点
-  - DOMAIN-SUFFIX,poe.com,🥢 选择节点
+  - DOMAIN-SUFFIX,launchdarkly.com,🥢 选择节点
+  - DOMAIN-SUFFIX,oaistatic.com,🥢 选择节点
+  - DOMAIN-SUFFIX,oaiusercontent.com,🥢 选择节点
+  - DOMAIN-SUFFIX,observeit.net,🥢 选择节点
+  - DOMAIN-SUFFIX,segment.io,🥢 选择节点
   - DOMAIN-SUFFIX,sentry.io,🥢 选择节点
   - DOMAIN-SUFFIX,stripe.com,🥢 选择节点
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🥢 选择节点
   - DOMAIN-KEYWORD,openai,🥢 选择节点
-  - DOMAIN-SUFFIX,ios.chat.openai.com,🥢 选择节点
-  # -AI 
+  # -Openai  
   # Photoshop AI-
   - DOMAIN-SUFFIX,adobe.com,🥢 选择节点
   - DOMAIN-SUFFIX,adobe.io,🥢 选择节点  

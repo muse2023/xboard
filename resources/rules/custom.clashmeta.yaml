@@ -66,6 +66,7 @@ rule-providers:
     YouTube: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yaml }     
     Telegram: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Telegram.yaml', interval: 86400, path: ./ruleset/Telegram.yaml }
     Microsoft: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Microsoft.yaml', interval: 86400, path: ./ruleset/Microsoft.yaml }
+    OpenAI: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/OpenAI.yaml', interval: 86400, path: ./ruleset/OpenAI.yaml }
     Apple: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Apple_Classical.yaml', interval: 86400, path: ./ruleset/Apple.yaml }
     GlobalMedia: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/GlobalMedia_Classical_No_Resolve.yaml', interval: 86400, path: ./ruleset/GlobalMedia.yaml }
     SteamCN: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yaml }
@@ -73,10 +74,11 @@ rule-providers:
 rules:
     # 自定义规则
     ##必须直连的
-    - RULE-SET,Direct,🎯 国内网站
-    - RULE-SET,SteamCN,🎯 国内网站         
+    - RULE-SET,Direct,🎯 国内网站,no-resolve
+    - RULE-SET,SteamCN,🎯 国内网站          
     ##必须代理的
     - RULE-SET,Proxy,🥢 选择节点
+    - RULE-SET,OpenAI,🥢 选择节点    
     - RULE-SET,Netflix,🎥 NETFLIX
     - RULE-SET,Disney,🎥 DisneyP
     - RULE-SET,BiliBili,📺 BiliBili  
@@ -86,6 +88,6 @@ rules:
     - RULE-SET,Telegram,📲 电报消息
     - RULE-SET,Microsoft,Ⓜ️ 微软服务           
     - RULE-SET,Apple,🍎 苹果服务
-    - RULE-SET,GlobalMedia,🌏 国外网站,no-resolve      
+    - RULE-SET,GlobalMedia,🌏 国外网站,no-resolve    
     - GEOIP,CN,🎯 国内网站
     - MATCH,🐟 漏网之鱼
