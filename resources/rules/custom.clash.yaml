@@ -37,19 +37,19 @@ proxies:
 
 proxy-groups:
   - { name: "🥢 选择节点", type: select, proxies: ["🇭🇰 香港|Auto","🇨🇳 台湾|Auto","🇸🇬 新加坡|Auto","🇯🇵 日本|Auto","🇺🇸 美国|Auto","♻️ Auto"] }
-  - { name: "♻️ Auto", type: fallback, proxies: [/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/], url: "http://www.gstatic.com/generate_204", interval: 300 }
-  - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-  - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-  - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]} 
-  - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-  - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}    
-  - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-  - { name: "🎯 直连网站", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-  - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}  
+  - { name: "♻️ Auto", type: fallback, proxies: [], url: "http://www.gstatic.com/generate_204", interval: 300 }
+  - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点"]}
+  - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点"]}
+  - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点"]} 
+  - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT"]}
+  - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点"]}    
+  - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点"]}
+  - { name: "🎯 直连网站", type: select, proxies: ["DIRECT","🥢 选择节点"]}
+  - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT"]}  
   - { name: "🇭🇰 香港|Auto", type: fallback, proxies: [/香港/], url: 'http://www.gstatic.com/generate_204', interval: 300 }    
   - { name: "🇨🇳 台湾|Auto", type: fallback, proxies: [/台湾/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
   - { name: "🇸🇬 新加坡|Auto", type: fallback, proxies: [/新加坡/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
-  - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/,/Hysteria/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
+  - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
   - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }              
   
 rules:
@@ -57,8 +57,7 @@ rules:
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
   - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
   - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
-  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
-  # -必须代理     
+  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点    
   # 必须直连-
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 直连网站
   - DOMAIN,checkip.synology.com,🎯 直连网站
@@ -69,28 +68,29 @@ rules:
   - DOMAIN-SUFFIX,steamserver.net,🎯 直连网站
   - DOMAIN-SUFFIX,xz.pphimalayanrt.com,🎯 直连网站
   - DOMAIN-SUFFIX,steamchina.com,🎯 直连网站
-  ## 阿里云 Download CDN
+  ## >> 阿里云 Download CDN
   - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,🎯 直连网站
-  ## 白山云 Download CDN
+  ## >> 白山云 Download CDN
   - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 直连网站
   - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 直连网站
   - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 直连网站
-  ## 华为云 Download CDN
+  ## >> 华为云 Download CDN
   - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,🎯 直连网站
-  ## 金山云 Download CDN
+  ## >> 金山云 Download CDN
   - DOMAIN-SUFFIX,dl.steam.clngaa.com,🎯 直连网站
   - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 直连网站
-  ## 腾讯云 Download CDN
+  ## >> 腾讯云 Download CDN
   - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,🎯 直连网站
-  ## 完美 Download CDN
+  ## >> 完美 Download CDN
   - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 直连网站
   - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 直连网站
   - DOMAIN-SUFFIX,wmsjsteam.com,🎯 直连网站
-  ## 网宿 Download CDN
+  ## >> 网宿 Download CDN
   - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,🎯 直连网站
   - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 直连网站
+  - DOMAIN-SUFFIX,steamstatic.com.8686c.com,🎯 直连网站
   # -必须直连  
-  # 全球直连-
+  # 内网直连- 
   - DOMAIN-SUFFIX,acl4.ssr,🎯 直连网站
   - DOMAIN-SUFFIX,ip6-localhost,🎯 直连网站
   - DOMAIN-SUFFIX,ip6-loopback,🎯 直连网站
@@ -122,49 +122,13 @@ rules:
   - DOMAIN-SUFFIX,routerlogin.com,🎯 直连网站
   - DOMAIN-SUFFIX,tendawifi.com,🎯 直连网站
   - DOMAIN-SUFFIX,zte.home,🎯 直连网站
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 直连网站
-  # -全球直连
-  # 谷歌FCM-
-  - DOMAIN,alt1-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt2-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt3-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt4-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt5-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt6-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt7-mtalk.google.com,🥢 选择节点
-  - DOMAIN,alt8-mtalk.google.com,🥢 选择节点
-  - DOMAIN,mtalk.google.com,🥢 选择节点
-  - IP-CIDR,64.233.177.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,64.233.186.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,64.233.187.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,64.233.188.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,64.233.189.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.23.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.24.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.28.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.127.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.137.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.203.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.204.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,74.125.206.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,108.177.125.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,142.250.4.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,142.250.10.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,142.250.31.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,142.250.96.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,172.217.194.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,172.217.218.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,172.217.219.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,172.253.63.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,172.253.122.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,173.194.175.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,173.194.218.188/32,🥢 选择节点,no-resolve
-  - IP-CIDR,209.85.233.188/32,🥢 选择节点,no-resolve
-  # -谷歌FCM
+  - DOMAIN-SUFFIX,tplogin.cn,🎯 直连网站 
+  # -内网直连
   # NETFLIX-      
   - DOMAIN,e13252.dscg.akamaiedge.net,🎥 NETFLIX
   - DOMAIN,h-netflix.online-metrix.net,🎥 NETFLIX
   - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,cookielaw.org,🎥 NETFLIX
   - DOMAIN-SUFFIX,flxvpn.net,🎥 NETFLIX
   - DOMAIN-SUFFIX,netflix.ca,🎥 NETFLIX
   - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
@@ -191,6 +155,7 @@ rules:
   - DOMAIN-SUFFIX,nflxsearch.net,🎥 NETFLIX
   - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
   - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,onetrust.com,🎥 NETFLIX
   - DOMAIN-SUFFIX,us-west-2.amazonaws.com,🎥 NETFLIX
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 NETFLIX
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
@@ -199,26 +164,179 @@ rules:
   - PROCESS-NAME,com.netflix.mediaclient,🎥 NETFLIX
   # -NETFLIX  
   # DisneyP-     
-  - DOMAIN,cdn.registerdisney.go.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,20thcenturystudios.com.au,🎥 DisneyP
+  - DOMAIN-SUFFIX,20thcenturystudios.com.br,🎥 DisneyP
+  - DOMAIN-SUFFIX,20thcenturystudios.jp,🎥 DisneyP
+  - DOMAIN-SUFFIX,abc-studios.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,abc.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,abcnews.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,abcnews.edgesuite.net,🎥 DisneyP
   - DOMAIN-SUFFIX,adobedtm.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,adventuresbydisney.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,babble.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,babyzone.com,🎥 DisneyP
   - DOMAIN-SUFFIX,bam.nr-data.net,🎥 DisneyP
   - DOMAIN-SUFFIX,bamgrid.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,beautyandthebeastmusical.co.uk,🎥 DisneyP
   - DOMAIN-SUFFIX,braze.com,🎥 DisneyP
   - DOMAIN-SUFFIX,cdn.optimizely.com,🎥 DisneyP
-  - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🎥 DisneyP
-  - DOMAIN-SUFFIX,cws.conviva.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,conviva.com,🎥 DisneyP
   - DOMAIN-SUFFIX,d9.flashtalking.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,dilcdn.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney-asia.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney-discount.com,🎥 DisneyP
   - DOMAIN-SUFFIX,disney-plus.net,🎥 DisneyP
   - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney-studio.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney-studio.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.asia,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.be,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.bg,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.ca,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.ch,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.il,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.jp,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.kr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.th,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.uk,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.co.za,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.com.au,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.com.br,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.com.hk,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.com.tw,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.cz,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.de,🎥 DisneyP
   - DOMAIN-SUFFIX,disney.demdex.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.dk,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.es,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.fi,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.fr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.gr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.hu,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.id,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.in,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.io,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.it,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.my,🎥 DisneyP
   - DOMAIN-SUFFIX,disney.my.sentry.io,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.nl,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.no,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.ph,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.pl,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.pt,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.ro,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.ru,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.se,🎥 DisneyP
+  - DOMAIN-SUFFIX,disney.sg,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyadsales.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyarena.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyaulani.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneybaby.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneycareers.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneychannelonstage.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneychannelroadtrip.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneycruisebrasil.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyenconcert.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyiejobs.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyinflight.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyinternational.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyinternationalhd.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyjunior.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyjuniortreataday.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneylandparis.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneylatino.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.co.il,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.co.uk,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.co.za,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.de,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.es,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.fr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.gen.tr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.gr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.it,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmoments.pl,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymagicmomentsme.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyme.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymeetingsandevents.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymovieinsiders.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneymusicpromotion.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneynewseries.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneynow.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneypeoplesurveys.com,🎥 DisneyP
   - DOMAIN-SUFFIX,disneyplus.bn5x.net,🎥 DisneyP
   - DOMAIN-SUFFIX,disneyplus.com,🎥 DisneyP
   - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyprivacycenter.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyredirects.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneysrivieraresort.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneystore.com,🎥 DisneyP
   - DOMAIN-SUFFIX,disneystreaming.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneysubscription.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneytermsofuse.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneytickets.co.uk,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyturkiye.com.tr,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneytvajobs.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,disneyworld-go.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,dlp-media.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,dmed.technology,🎥 DisneyP
   - DOMAIN-SUFFIX,dssott.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,dtci.co,🎥 DisneyP
+  - DOMAIN-SUFFIX,dtci.technology,🎥 DisneyP
+  - DOMAIN-SUFFIX,edgedatg.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,espn.co.uk,🎥 DisneyP
+  - DOMAIN-SUFFIX,espn.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,espn.hb.omtrdc.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,espn.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,espncdn.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,espnqa.com,🎥 DisneyP
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,go-disneyworldgo.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,go.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,hotstar-cdn.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,hotstar-labs.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,hotstar.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,hotstarext.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,hsprepack.akamaized.net,🎥 DisneyP
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvel.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvel10thanniversary.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marveldimensionofheroes.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelparty.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelpinball.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelsdoubleagent.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelspotlightplays.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelsuperheroseptember.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,marvelsuperwar.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,mickey.tv,🎥 DisneyP
+  - DOMAIN-SUFFIX,moviesanywhere.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,natgeomaps.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,nationalgeographic.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,nationalgeographicpartners.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,ngeo.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,nomadlandmovie.ch,🎥 DisneyP
+  - DOMAIN-SUFFIX,playmation.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,shopdisney.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,shops-disney.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,sorcerersarena.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,spaindisney.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,star-brasil.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,star-latam.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,starott.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,starplus.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,starwars.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,starwarsgalacticstarcruiser.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,starwarskids.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,streamingdisney.net,🎥 DisneyP
+  - DOMAIN-SUFFIX,themarvelexperiencetour.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,thestationbymaker.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,thewaltdisneycompany.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,thisispolaris.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,watchdisneyfe.com,🎥 DisneyP
+  - DOMAIN-SUFFIX,watchespn.com,🎥 DisneyP
+  - PROCESS-NAME,com.disney.datg.videoplatforms.android.abc,🎥 DisneyP
+  - PROCESS-NAME,com.disney.disneyplus,🎥 DisneyP
   # -DisneyP   
   # 微软服务-
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
@@ -365,11 +483,6 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报消息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报消息,no-resolve
   # -电报消息
-  - DOMAIN-SUFFIX,1password.com,🥢 选择节点
-  - DOMAIN-SUFFIX,okx.com,🥢 选择节点  
-  - DOMAIN-SUFFIX,adguard.org,🥢 选择节点
-  - DOMAIN-SUFFIX,bit.no.com,🥢 选择节点
-  - DOMAIN-SUFFIX,btlibrary.me,🥢 选择节点
   # Openai  
   - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
   - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
@@ -395,11 +508,12 @@ rules:
   - DOMAIN-SUFFIX,stripe.com,🥢 选择节点
   - DOMAIN-SUFFIX,turn.livekit.cloud,🥢 选择节点
   - DOMAIN-KEYWORD,openai,🥢 选择节点
-  # -Openai  
-  # Photoshop AI-
-  - DOMAIN-SUFFIX,adobe.com,🥢 选择节点
-  - DOMAIN-SUFFIX,adobe.io,🥢 选择节点  
-  # -Photoshop AI
+  # -Openai
+  - DOMAIN-SUFFIX,1password.com,🥢 选择节点
+  - DOMAIN-SUFFIX,okx.com,🥢 选择节点  
+  - DOMAIN-SUFFIX,adguard.org,🥢 选择节点
+  - DOMAIN-SUFFIX,bit.no.com,🥢 选择节点
+  - DOMAIN-SUFFIX,btlibrary.me,🥢 选择节点    
   - DOMAIN-SUFFIX,cloudcone.com,🥢 选择节点
   - DOMAIN-SUFFIX,dubox.com,🥢 选择节点
   - DOMAIN-SUFFIX,gameloft.com,🥢 选择节点
@@ -558,21 +672,6 @@ rules:
   - DOMAIN-SUFFIX,amazon.co.jp,🥢 选择节点
   - DOMAIN-SUFFIX,amazon.com,🥢 选择节点
   - DOMAIN-SUFFIX,amazonaws.com,🥢 选择节点
-  - IP-CIDR,13.32.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,13.35.0.0/17,🥢 选择节点,no-resolve
-  - IP-CIDR,18.184.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,18.194.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,18.208.0.0/13,🥢 选择节点,no-resolve
-  - IP-CIDR,18.232.0.0/14,🥢 选择节点,no-resolve
-  - IP-CIDR,52.58.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,52.74.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,52.77.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,52.84.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,52.200.0.0/13,🥢 选择节点,no-resolve
-  - IP-CIDR,54.93.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,54.156.0.0/14,🥢 选择节点,no-resolve
-  - IP-CIDR,54.226.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,54.230.156.0/22,🥢 选择节点,no-resolve
   - DOMAIN-KEYWORD,uk-live,🥢 选择节点
   - DOMAIN-SUFFIX,bbc.co,🥢 选择节点
   - DOMAIN-SUFFIX,bbc.com,🥢 选择节点
@@ -645,38 +744,12 @@ rules:
   - DOMAIN-SUFFIX,youtube.com,🥢 选择节点
   - DOMAIN-SUFFIX,yt.be,🥢 选择节点
   - DOMAIN-SUFFIX,ytimg.com,🥢 选择节点
-  - IP-CIDR,74.125.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,173.194.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,120.232.181.162/32,🥢 选择节点,no-resolve
-  - IP-CIDR,120.241.147.226/32,🥢 选择节点,no-resolve
-  - IP-CIDR,120.253.253.226/32,🥢 选择节点,no-resolve
-  - IP-CIDR,120.253.255.162/32,🥢 选择节点,no-resolve
-  - IP-CIDR,120.253.255.34/32,🥢 选择节点,no-resolve
-  - IP-CIDR,120.253.255.98/32,🥢 选择节点,no-resolve
-  - IP-CIDR,180.163.150.162/32,🥢 选择节点,no-resolve
-  - IP-CIDR,180.163.150.34/32,🥢 选择节点,no-resolve
-  - IP-CIDR,180.163.151.162/32,🥢 选择节点,no-resolve
-  - IP-CIDR,180.163.151.34/32,🥢 选择节点,no-resolve
-  - IP-CIDR,203.208.39.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,203.208.40.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,203.208.41.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,203.208.43.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,203.208.50.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,220.181.174.162/32,🥢 选择节点,no-resolve
-  - IP-CIDR,220.181.174.226/32,🥢 选择节点,no-resolve
-  - IP-CIDR,220.181.174.34/32,🥢 选择节点,no-resolve
   - DOMAIN-SUFFIX,cdninstagram.com,🥢 选择节点
   - DOMAIN-SUFFIX,instagram.com,🥢 选择节点
   - DOMAIN-SUFFIX,instagr.am,🥢 选择节点
   - DOMAIN-SUFFIX,kakao.com,🥢 选择节点
   - DOMAIN-SUFFIX,kakao.co.kr,🥢 选择节点
   - DOMAIN-SUFFIX,kakaocdn.net,🥢 选择节点
-  - IP-CIDR,1.201.0.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,27.0.236.0/22,🥢 选择节点,no-resolve
-  - IP-CIDR,103.27.148.0/22,🥢 选择节点,no-resolve
-  - IP-CIDR,103.246.56.0/22,🥢 选择节点,no-resolve
-  - IP-CIDR,110.76.140.0/22,🥢 选择节点,no-resolve
-  - IP-CIDR,113.61.104.0/22,🥢 选择节点,no-resolve
   - DOMAIN-SUFFIX,lin.ee,🥢 选择节点
   - DOMAIN-SUFFIX,line-apps.com,🥢 选择节点
   - DOMAIN-SUFFIX,line-cdn.net,🥢 选择节点
@@ -684,14 +757,6 @@ rules:
   - DOMAIN-SUFFIX,line.me,🥢 选择节点
   - DOMAIN-SUFFIX,line.naver.jp,🥢 选择节点
   - DOMAIN-SUFFIX,nhncorp.jp,🥢 选择节点
-  - IP-CIDR,103.2.28.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,103.2.30.0/23,🥢 选择节点,no-resolve
-  - IP-CIDR,119.235.224.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,119.235.232.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,119.235.235.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,119.235.236.0/23,🥢 选择节点,no-resolve
-  - IP-CIDR,147.92.128.0/17,🥢 选择节点,no-resolve
-  - IP-CIDR,203.104.128.0/19,🥢 选择节点,no-resolve
   - DOMAIN-KEYWORD,1drv,🥢 选择节点
   - DOMAIN-KEYWORD,onedrive,🥢 选择节点
   - DOMAIN-KEYWORD,skydrive,🥢 选择节点
@@ -763,35 +828,8 @@ rules:
   - DOMAIN-SUFFIX,twimg.co,🥢 选择节点
   - DOMAIN-SUFFIX,twimg.com,🥢 选择节点
   - DOMAIN-SUFFIX,twimg.org,🥢 选择节点
-  - DOMAIN-SUFFIX,t.me,🥢 选择节点
-  - DOMAIN-SUFFIX,tdesktop.com,🥢 选择节点
-  - DOMAIN-SUFFIX,telegra.ph,🥢 选择节点
-  - DOMAIN-SUFFIX,telegram.me,🥢 选择节点
-  - DOMAIN-SUFFIX,telegram.org,🥢 选择节点
-  - DOMAIN-SUFFIX,telesco.pe,🥢 选择节点
-  - IP-CIDR,91.108.0.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,109.239.140.0/24,🥢 选择节点,no-resolve
-  - IP-CIDR,149.154.160.0/20,🥢 选择节点,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,🥢 选择节点,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,🥢 选择节点,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,🥢 选择节点,no-resolve
   - DOMAIN-SUFFIX,terabox.com,🥢 选择节点
   - DOMAIN-SUFFIX,teraboxcdn.com,🥢 选择节点
-  - IP-CIDR,18.194.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,34.224.0.0/12,🥢 选择节点,no-resolve
-  - IP-CIDR,54.242.0.0/15,🥢 选择节点,no-resolve
-  - IP-CIDR,50.22.198.204/30,🥢 选择节点,no-resolve
-  - IP-CIDR,208.43.122.128/27,🥢 选择节点,no-resolve
-  - IP-CIDR,108.168.174.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,173.192.231.32/27,🥢 选择节点,no-resolve
-  - IP-CIDR,158.85.5.192/27,🥢 选择节点,no-resolve
-  - IP-CIDR,174.37.243.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,158.85.46.128/27,🥢 选择节点,no-resolve
-  - IP-CIDR,173.192.222.160/27,🥢 选择节点,no-resolve
-  - IP-CIDR,184.173.128.0/17,🥢 选择节点,no-resolve
-  - IP-CIDR,158.85.224.160/27,🥢 选择节点,no-resolve
-  - IP-CIDR,75.126.150.0/16,🥢 选择节点,no-resolve
-  - IP-CIDR,69.171.235.0/16,🥢 选择节点,no-resolve
   - DOMAIN-SUFFIX,mediawiki.org,🥢 选择节点
   - DOMAIN-SUFFIX,wikibooks.org,🥢 选择节点
   - DOMAIN-SUFFIX,wikidata.org,🥢 选择节点
@@ -810,7 +848,7 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🥢 选择节点
   - DOMAIN-SUFFIX,vikacg.com,🥢 选择节点
   - DOMAIN-SUFFIX,picjs.xyz,🥢 选择节点
-  # -电报消息
+  # 区分符  
   - DOMAIN-SUFFIX,13th.tech,🎯 直连网站
   - DOMAIN-SUFFIX,423down.com,🎯 直连网站
   - DOMAIN-SUFFIX,bokecc.com,🎯 直连网站
@@ -1182,15 +1220,6 @@ rules:
   - DOMAIN-SUFFIX,totheglory.im,🎯 直连网站
   - DOMAIN-SUFFIX,trontv.com,🎯 直连网站
   - DOMAIN-SUFFIX,teamviewer.com,🎯 直连网站
-  - IP-CIDR,109.239.140.0/24,🎯 直连网站,no-resolve
-  - IP-CIDR,139.220.243.27/32,🎯 直连网站,no-resolve
-  - IP-CIDR,172.16.102.56/32,🎯 直连网站,no-resolve
-  - IP-CIDR,185.188.32.1/28,🎯 直连网站,no-resolve
-  - IP-CIDR,221.226.128.146/32,🎯 直连网站,no-resolve
-  - IP-CIDR6,2a0b:b580::/48,🎯 直连网站,no-resolve
-  - IP-CIDR6,2a0b:b581::/48,🎯 直连网站,no-resolve
-  - IP-CIDR6,2a0b:b582::/48,🎯 直连网站,no-resolve
-  - IP-CIDR6,2a0b:b583::/48,🎯 直连网站,no-resolve
   - DOMAIN-SUFFIX,baomitu.com,🎯 直连网站
   - DOMAIN-SUFFIX,bootcss.com,🎯 直连网站
   - DOMAIN-SUFFIX,jiasule.com,🎯 直连网站

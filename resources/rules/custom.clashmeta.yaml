@@ -37,27 +37,29 @@ proxies:
 
 proxy-groups:
     - { name: "🥢 选择节点", type: select, proxies: ["🇭🇰 香港|Auto","🇨🇳 台湾|Auto","🇸🇬 新加坡|Auto","🇯🇵 日本|Auto","🇺🇸 美国|Auto","♻️ Auto"] }
-    - { name: "♻️ Auto", type: fallback, proxies: [/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/Hysteria/,/美国/,/英国/,/土耳其/], url: "http://www.gstatic.com/generate_204", interval: 300 }
-    - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]} 
-    - { name: "🎮 Game", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "🌈 Google", type: select, proxies: ["🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}     
-    - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}    
-    - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "🌏 国外网站", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "🎯 国内网站", type: select, proxies: ["DIRECT","🥢 选择节点",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}
-    - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT",/香港/,/台湾/,/新加坡/,/日本/,/Hysteria/,/美国/,/英国/,/土耳其/]}  
+    - { name: "♻️ Auto", type: fallback, proxies: [], url: "http://www.gstatic.com/generate_204", interval: 300 }
+    - { name: "🎥 NETFLIX", type: select, proxies: ["🥢 选择节点"]}
+    - { name: "🎥 DisneyP", type: select, proxies: ["🥢 选择节点"]}
+    - { name: "📺 BiliBili", type: select, proxies: ["DIRECT","🥢 选择节点"]} 
+    - { name: "🎮 Game", type: select, proxies: ["DIRECT","🥢 选择节点"]}
+    - { name: "🌈 Google", type: select, proxies: ["🥢 选择节点"]}     
+    - { name: "📲 电报消息", type: select, proxies: ["🥢 选择节点","DIRECT"]}
+    - { name: "Ⓜ️ 微软服务", type: select, proxies: ["DIRECT","🥢 选择节点"]}    
+    - { name: "🍎 苹果服务", type: select, proxies: ["DIRECT","🥢 选择节点"]}
+    - { name: "🌏 国外网站", type: select, proxies: ["🥢 选择节点" ,"DIRECT"]}
+    - { name: "🎯 国内网站", type: select, proxies: ["DIRECT","🥢 选择节点"]}
+    - { name: "🐟 漏网之鱼", type: select, proxies: ["🥢 选择节点" ,"DIRECT"]}  
     - { name: "🇭🇰 香港|Auto", type: fallback, proxies: [/香港/], url: 'http://www.gstatic.com/generate_204', interval: 300 }    
     - { name: "🇨🇳 台湾|Auto", type: fallback, proxies: [/台湾/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
     - { name: "🇸🇬 新加坡|Auto", type: fallback, proxies: [/新加坡/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
-    - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/,/Hysteria/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
+    - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
     - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }
 
 rule-providers:
     Direct: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Bigme_Direct.yaml', interval: 86400, path: ./ruleset/Bigme_Direct.yaml }
+    SteamCN: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yaml }
     Proxy: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Bigme_Proxy.yaml', interval: 86400, path: ./ruleset/Bigme_Proxy.yaml }
+    OpenAI: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/OpenAI.yaml', interval: 86400, path: ./ruleset/OpenAI.yaml }    
     Netflix: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Netflix_Classical.yaml', interval: 86400, path: ./ruleset/Netflix.yaml }
     Disney: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Disney.yaml', interval: 86400, path: ./ruleset/Disney.yaml }
     BiliBili: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/BiliBili.yaml', interval: 86400, path: ./ruleset/BiliBili.yaml }
@@ -66,10 +68,8 @@ rule-providers:
     YouTube: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/YouTube.yaml', interval: 86400, path: ./ruleset/YouTube.yaml }     
     Telegram: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Telegram.yaml', interval: 86400, path: ./ruleset/Telegram.yaml }
     Microsoft: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Microsoft.yaml', interval: 86400, path: ./ruleset/Microsoft.yaml }
-    OpenAI: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/OpenAI.yaml', interval: 86400, path: ./ruleset/OpenAI.yaml }
     Apple: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/Apple_Classical.yaml', interval: 86400, path: ./ruleset/Apple.yaml }
     GlobalMedia: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/GlobalMedia_Classical_No_Resolve.yaml', interval: 86400, path: ./ruleset/GlobalMedia.yaml }
-    SteamCN: { type: http, behavior: classical, url: 'https://ruleset-1319987019.cos.ap-chongqing.myqcloud.com/SteamCN.yaml', interval: 86400, path: ./ruleset/SteamCN.yaml }
 
 rules:
     # 自定义规则
