@@ -149,11 +149,12 @@ class ClientController extends Controller
     private function setSubscribeInfoToServers(&$servers, $user, $rejectServerCount = 0)
     {
         if (!isset($servers[0])) return;
-        if($rejectServerCount > 0){
-            array_unshift($servers, array_merge($servers[0], [
-                'name' => "Hysteria2未下发！",
-            ]));
-        }
+        // hy没有下发的提示
+        // if($rejectServerCount > 0){
+        //     array_unshift($servers, array_merge($servers[0], [
+        //         'name' => "Hysteria2未下发！",
+        //     ]));
+        // }
         if (!(int)admin_setting('show_info_to_server_enable', 0)) return;
         $useTraffic = $user['u'] + $user['d'];
         $totalTraffic = $user['transfer_enable'];
