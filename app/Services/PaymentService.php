@@ -45,7 +45,7 @@ class PaymentService
             $parseUrl = parse_url($notifyUrl);
             $notifyUrl = $this->config['notify_domain'] . $parseUrl['path'];
         }
-
+        
         return $this->payment->pay([
             'notify_url' => $notifyUrl,
             // 'return_url' => admin_setting('app_url') . '/#/order/' . $order['trade_no'],
