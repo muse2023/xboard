@@ -45,8 +45,15 @@ class PaymentController extends Controller
         $payment = Payment::where('id', $order->payment_id)->first();
         $telegramService = new TelegramService();
         $message = sprintf(
-            "💰成功收款%s元\n———————————————\n订单号：%s",
+            "💰成功收款%s元\n" .
+            "———————————————\n" .
+            "支付接口：%s\n" .
+            "支付渠道：%s\n" .
+            "本站订单：`%s`"
+            ,
             $order->total_amount / 100,
+            $payment->payment,
+            $payment->name,
             $order->trade_no
         );
         
