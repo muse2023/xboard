@@ -22,18 +22,11 @@ class Clash
         $servers = $this->servers;
         $user = $this->user;
         $appName = admin_setting('app_name', 'XBoard');
-        $expiredDate = $user['expired_at'] ?: '长期有效';
-        $currentTimestamp = time();
-        $expiredTimestamp = $user['expired_at'];
         $defaultConfig = base_path() . '/resources/rules/default.clash.yaml';
         $customConfig = base_path() . '/resources/rules/custom.clash.yaml';
         if (\File::exists($customConfig)) {
             $config = Yaml::parseFile($customConfig);
         } else {
-            $config = Yaml::parseFile($defaultConfig);
-        }
-        if  ($currentTimestamp > $expiredTimestamp && is_numeric ($expiredDate) ) {
-            $appName.= " - 套餐到期啦！";
             $config = Yaml::parseFile($defaultConfig);
         }
         $proxy = [];
