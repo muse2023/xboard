@@ -27,7 +27,11 @@ class Shadowrocket
         $upload = round($user['u'] / (1024*1024*1024), 2);
         $download = round($user['d'] / (1024*1024*1024), 2);
         $totalTraffic = round($user['transfer_enable'] / (1024*1024*1024), 2);
-        $expiredDate = date('Y-m-d', $user['expired_at']);
+        if (empty($user['expired_at'])) {
+            $expiredDate = '不限时';
+        } else {
+            $expiredDate = date('Y-m-d', $user['expired_at']);
+        }
         $uri .= "STATUS=⚡已使用,↑:{$upload}GB,↓:{$download}GB,🥢总流量:{$totalTraffic}GB,🆘到期时间:{$expiredDate}\r\n";
         foreach ($servers as $item) {
             if ($item['type'] === 'shadowsocks') {

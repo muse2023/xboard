@@ -23,6 +23,9 @@ class ClashMeta
         $servers = $this->servers;
         $user = $this->user;
         $appName = admin_setting('app_name', 'XBoard');
+        $expiredDate = $user['expired_at'] ?: '长期有效';
+        $currentTimestamp = time();
+        $expiredTimestamp = $user['expired_at'];        
         $defaultConfig = base_path() . '/resources/rules/default.clash.yaml';
         $customClashConfig = base_path() . '/resources/rules/custom.clash.yaml';
         $customConfig = base_path() . '/resources/rules/custom.clashmeta.yaml';
@@ -31,6 +34,10 @@ class ClashMeta
         } elseif(\File::exists($customClashConfig)) {
             $config = Yaml::parseFile($customClashConfig);
         } else{
+            $config = Yaml::parseFile($defaultConfig);
+        }
+        if  ($currentTimestamp > $expiredTimestamp && is_numeric ($expiredDate) ) {
+            $appName.= " - 套餐到期啦！";
             $config = Yaml::parseFile($defaultConfig);
         }
         $proxy = [];
