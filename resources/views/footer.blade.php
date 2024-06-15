@@ -161,7 +161,6 @@
 
 <script src="/assets/js/vendor.min.js"></script>
 <script src="/assets/vendor/aos/dist/aos.js"></script>
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9d0c3637-d6cf-442e-952e-b1eeaed90dc1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <script src="/assets/js/theme.min.js"></script>
 <script>
   document.getElementById('fyear').innerHTML = new Date().getFullYear() + '';

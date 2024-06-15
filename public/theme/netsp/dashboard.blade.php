@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/png" sizes="16x16" href="https://pic.imgdb.cn/item/63e5d5424757feff33be29b0.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/theme/{{$theme}}/assets/favicon.ico">
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/components.chunk.css?v={{$version}}">
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/umi.css?v={{$version}}">
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/netsp.css">

@@ -4,19 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:image" content="https://pic.imgdb.cn/item/64638bb50d2dde57772873d4.png">
-  <meta name="author" content="MoeNet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-  <script src="/assets/js/Notice.js"></script>
-  <link rel="shortcut icon" href="https://pic.imgdb.cn/item/64638bb50d2dde57772873d4.png">
+  <link rel="icon" type="image/png" href="/assets/logo/favicon.ico">
   <link rel="stylesheet" href="/assets/css/vendor.min.css">
   <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/assets/vendor/aos/dist/aos.css">
   <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
-
   <link rel="stylesheet" href="/assets/css/theme.min.css">
-  <meta content="https://www.bigme.pro" property="og:url">
-  <link href="https://www.bigme.pro" rel="canonical">
+  <script src="/assets/js/Notice.js"></script>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9d0c3637-d6cf-442e-952e-b1eeaed90dc1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
 <body>
