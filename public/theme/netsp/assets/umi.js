@@ -19075,7 +19075,7 @@
 			s = n.n(i),
 			c = n("/MKj"),
 			l = n("Y2fQ"),
-			gc = "https://www.bigme.pro/";
+			gc = "https://1s.bigmeok.me/";
 		class u extends a.a.Component {
 			constructor() {
 				super(...arguments), this.state = {
@@ -29274,7 +29274,7 @@
 					className: "mb-3 text-center"
 				}, i.a.createElement("a", {
 					className: "flex-center  ",
-					href: "https://www.bigme.pro"
+					href: "https://1s.bigmeok.me"
 				}, window.settings.logo ? i.a
 					.createElement("img", {
 						className: "netsp-logo mb-3",
