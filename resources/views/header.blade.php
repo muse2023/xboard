@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="/assets/css/theme.min.css">
   <script src="/assets/js/Notice.js"></script>
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9d0c3637-d6cf-442e-952e-b1eeaed90dc1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <script
+    type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "9d0c3637-d6cf-442e-952e-b1eeaed90dc1"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 </head>
 
 <body>
@@ -52,8 +53,10 @@
             </div>
           </div>
           <ul class="navbar-nav">
-            <li><a class="nav-link" href="faq ">帮助</a></li>
-            <li><a class="nav-link" href="contact-us ">联系</a></li>
+            <li><a class="nav-link" href="faq "><i class="bi bi-info-square"></i> 帮助</a></li>
+            <li><a class="nav-link" href="contact-us "><i class="bi bi-chat-right-dots"></i> 联系</a></li>
+            <li><a class="nav-link" href="/user "><i class="bi bi-box-arrow-in-right"></i> 登录</a></li>
+            <li><a class="nav-link" href="/user#/register"><i class="bi bi-person-plus"></i> 注册</a></li>
           </ul>
         </div>
       </nav>
