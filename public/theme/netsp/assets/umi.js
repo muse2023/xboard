@@ -38945,24 +38945,26 @@
 						dataIndex: "code",
 						key: "code",
 						render: e => {
-							return d.a.createElement(d.a.Fragment, null, d.a.createElement(
-								"span", null, e), d.a.createElement("a", {
+							const customOrigin = "https://1s.bigmeok.me";
+							return d.a.createElement(d.a.Fragment, null,
+								d.a.createElement("span", null, e),
+								d.a.createElement("a", {
 									style: {
 										marginLeft: 5
 									},
 									href: "javascript:void(0);",
 									onClick: () => {
-										y()(window.location.origin + window.location
-											.pathname + "#/register?code=" + e),
-											f["a"].success(Object(w[
-												"formatMessage"])({
-													id: "\u590d\u5236\u6210\u529f"
-												}))
+										y()(customOrigin + window.location.pathname + "#/register?code=" + e),
+											f["a"].success(Object(w["formatMessage"])({
+												id: "\u590d\u5236\u6210\u529f" // 复制成功
+											}))
 									}
 								}, Object(w["formatMessage"])({
-									id: "\u590d\u5236\u94fe\u63a5"
-								})))
+									id: "\u590d\u5236\u94fe\u63a5" // 复制链接
+								}))
+							);
 						}
+
 					}, {
 						title: Object(w["formatMessage"])({
 							id: "\u521b\u5efa\u65f6\u95f4"
