@@ -30,7 +30,7 @@ dns:
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://1.0.0.1/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://doh.apad.pro/dns-query']
+    fallback: ['https://dns.quad9.net/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://doh.apad.pro/dns-query']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 
 proxies:
@@ -52,46 +52,16 @@ proxy-groups:
   - { name: "🇯🇵 日本|Auto", type: fallback, proxies: [/日本/], url: 'http://www.gstatic.com/generate_204', interval: 300 }   
   - { name: "🇺🇸 美国|Auto", type: fallback, proxies: [/美国/], url: 'http://www.gstatic.com/generate_204', interval: 300 }              
   
-rules:
-  # 必须代理-    
-  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
-  - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
-  - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
-  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
-  - DOMAIN-SUFFIX,v2ex.com,🥢 选择节点      
-  # 必须直连-
+rules:   
+  # 阿里云
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 直连网站
+  - DOMAIN-SUFFIX,aliyun.com,🎯 直连网站
+  # 向日葵    
   - DOMAIN,checkip.synology.com,🎯 直连网站
   - DOMAIN,ddns.synology.com,🎯 直连网站
-  ## 微软网络检测直连
+  # 微软网络检测直连
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 直连网站
-  ## SteamCN直连
-  - DOMAIN-SUFFIX,steamserver.net,🎯 直连网站
-  - DOMAIN-SUFFIX,xz.pphimalayanrt.com,🎯 直连网站
-  - DOMAIN-SUFFIX,steamchina.com,🎯 直连网站
-  ## >> 阿里云 Download CDN
-  - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,🎯 直连网站
-  ## >> 白山云 Download CDN
-  - DOMAIN-SUFFIX,st.dl.bscstorage.net,🎯 直连网站
-  - DOMAIN-SUFFIX,st.dl.eccdnx.com,🎯 直连网站
-  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,🎯 直连网站
-  ## >> 华为云 Download CDN
-  - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,🎯 直连网站
-  ## >> 金山云 Download CDN
-  - DOMAIN-SUFFIX,dl.steam.clngaa.com,🎯 直连网站
-  - DOMAIN-SUFFIX,dl.steam.ksyna.com,🎯 直连网站
-  ## >> 腾讯云 Download CDN
-  - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,🎯 直连网站
-  ## >> 完美 Download CDN
-  - DOMAIN-SUFFIX,csgo.wmsj.cn,🎯 直连网站
-  - DOMAIN-SUFFIX,dota2.wmsj.cn,🎯 直连网站
-  - DOMAIN-SUFFIX,wmsjsteam.com,🎯 直连网站
-  ## >> 网宿 Download CDN
-  - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,🎯 直连网站
-  - DOMAIN-SUFFIX,steampowered.com.8686c.com,🎯 直连网站
-  - DOMAIN-SUFFIX,steamstatic.com.8686c.com,🎯 直连网站
-  # -必须直连  
-  # 内网直连- 
+  # 内网直连
   - DOMAIN-SUFFIX,acl4.ssr,🎯 直连网站
   - DOMAIN-SUFFIX,ip6-localhost,🎯 直连网站
   - DOMAIN-SUFFIX,ip6-loopback,🎯 直连网站
@@ -124,7 +94,56 @@ rules:
   - DOMAIN-SUFFIX,tendawifi.com,🎯 直连网站
   - DOMAIN-SUFFIX,zte.home,🎯 直连网站
   - DOMAIN-SUFFIX,tplogin.cn,🎯 直连网站 
-  # -内网直连
+  # SteamCN直连
+  - DOMAIN,csgo.wmsj.cn,🎯 直连网站 
+  - DOMAIN,dl.steam.clngaa.com,🎯 直连网站 
+  - DOMAIN,dl.steam.ksyna.com,🎯 直连网站 
+  - DOMAIN,dota2.wmsj.cn,🎯 直连网站 
+  - DOMAIN,st.dl.bscstorage.net,🎯 直连网站 
+  - DOMAIN,st.dl.eccdnx.com,🎯 直连网站 
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 直连网站 
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 直连网站 
+  - DOMAIN,steampowered.com.8686c.com,🎯 直连网站 
+  - DOMAIN,steamstatic.com.8686c.com,🎯 直连网站 
+  - DOMAIN,wmsjsteam.com,🎯 直连网站 
+  - DOMAIN,xz.pphimalayanrt.com,🎯 直连网站 
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 直连网站 
+  - DOMAIN-SUFFIX,steamchina.com,🎯 直连网站 
+  - DOMAIN-SUFFIX,steamcontent.com,🎯 直连网站 
+  - DOMAIN-SUFFIX,steamserver.net,🎯 直连网站 
+  - DOMAIN-SUFFIX,steamusercontent.com,🎯 直连网站 
+  # Proxy  
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
+  - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
+  - DOMAIN-SUFFIX,steampowered.com,🥢 选择节点
+  - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
+  - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
+  - DOMAIN-SUFFIX,v2ex.com,🥢 选择节点
+  # Openai  
+  - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
+  - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
+  - DOMAIN-SUFFIX,ai.com,🥢 选择节点
+  - DOMAIN-SUFFIX,algolia.net,🥢 选择节点
+  - DOMAIN-SUFFIX,api.statsig.com,🥢 选择节点
+  - DOMAIN-SUFFIX,auth0.com,🥢 选择节点
+  - DOMAIN-SUFFIX,chatgpt.com,🥢 选择节点
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🥢 选择节点
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🥢 选择节点
+  - DOMAIN-SUFFIX,events.statsigapi.net,🥢 选择节点
+  - DOMAIN-SUFFIX,featuregates.org,🥢 选择节点
+  - DOMAIN-SUFFIX,host.livekit.cloud,🥢 选择节点
+  - DOMAIN-SUFFIX,identrust.com,🥢 选择节点
+  - DOMAIN-SUFFIX,intercom.io,🥢 选择节点
+  - DOMAIN-SUFFIX,intercomcdn.com,🥢 选择节点
+  - DOMAIN-SUFFIX,launchdarkly.com,🥢 选择节点
+  - DOMAIN-SUFFIX,oaistatic.com,🥢 选择节点
+  - DOMAIN-SUFFIX,oaiusercontent.com,🥢 选择节点
+  - DOMAIN-SUFFIX,observeit.net,🥢 选择节点
+  - DOMAIN-SUFFIX,segment.io,🥢 选择节点
+  - DOMAIN-SUFFIX,sentry.io,🥢 选择节点
+  - DOMAIN-SUFFIX,stripe.com,🥢 选择节点
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🥢 选择节点
+  - DOMAIN-KEYWORD,openai,🥢 选择节点         
   # NETFLIX-      
   - DOMAIN,e13252.dscg.akamaiedge.net,🎥 NETFLIX
   - DOMAIN,h-netflix.online-metrix.net,🎥 NETFLIX
@@ -162,8 +181,7 @@ rules:
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
   - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
   - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
-  - PROCESS-NAME,com.netflix.mediaclient,🎥 NETFLIX
-  # -NETFLIX  
+  - PROCESS-NAME,com.netflix.mediaclient,🎥 NETFLIX  
   # DisneyP-     
   - DOMAIN-SUFFIX,20thcenturystudios.com.au,🎥 DisneyP
   - DOMAIN-SUFFIX,20thcenturystudios.com.br,🎥 DisneyP
@@ -338,7 +356,38 @@ rules:
   - DOMAIN-SUFFIX,watchespn.com,🎥 DisneyP
   - PROCESS-NAME,com.disney.datg.videoplatforms.android.abc,🎥 DisneyP
   - PROCESS-NAME,com.disney.disneyplus,🎥 DisneyP
-  # -DisneyP   
+  # BiliBili-  
+  - DOMAIN,apiintl.biliapi.net,📺 BiliBili
+  - DOMAIN,upos-hz-mirrorakam.akamaized.net,📺 BiliBili
+  - DOMAIN-SUFFIX,acg.tv,📺 BiliBili
+  - DOMAIN-SUFFIX,acgvideo.com,📺 BiliBili
+  - DOMAIN-SUFFIX,b23.tv,📺 BiliBili
+  - DOMAIN-SUFFIX,bigfun.cn,📺 BiliBili
+  - DOMAIN-SUFFIX,bigfunapp.cn,📺 BiliBili
+  - DOMAIN-SUFFIX,biliapi.com,📺 BiliBili
+  - DOMAIN-SUFFIX,biliapi.net,📺 BiliBili
+  - DOMAIN-SUFFIX,bilibili.com,📺 BiliBili
+  - DOMAIN-SUFFIX,bilibili.tv,📺 BiliBili
+  - DOMAIN-SUFFIX,biligame.com,📺 BiliBili
+  - DOMAIN-SUFFIX,biligame.net,📺 BiliBili
+  - DOMAIN-SUFFIX,bilivideo.cn,📺 BiliBili
+  - DOMAIN-SUFFIX,bilivideo.com,📺 BiliBili
+  - DOMAIN-SUFFIX,hdslb.com,📺 BiliBili
+  - DOMAIN-SUFFIX,im9.com,📺 BiliBili
+  - DOMAIN-SUFFIX,smtcdns.net,📺 BiliBili
+  # 电报消息- 
+  - DOMAIN-SUFFIX,t.me,📲 电报消息
+  - DOMAIN-SUFFIX,tdesktop.com,📲 电报消息
+  - DOMAIN-SUFFIX,telegra.ph,📲 电报消息
+  - DOMAIN-SUFFIX,telegram.me,📲 电报消息
+  - DOMAIN-SUFFIX,telegram.org,📲 电报消息
+  - DOMAIN-SUFFIX,telesco.pe,📲 电报消息
+  - IP-CIDR,91.108.0.0/16,📲 电报消息,no-resolve
+  - IP-CIDR,109.239.140.0/24,📲 电报消息,no-resolve
+  - IP-CIDR,149.154.160.0/20,📲 电报消息,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,📲 电报消息,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,📲 电报消息,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,📲 电报消息,no-resolve   
   # 微软服务-
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
@@ -418,28 +467,7 @@ rules:
   - DOMAIN-SUFFIX,windowsupdate.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
-  # -微软服务  
-  # BiliBili-  
-  - DOMAIN,apiintl.biliapi.net,📺 BiliBili
-  - DOMAIN,upos-hz-mirrorakam.akamaized.net,📺 BiliBili
-  - DOMAIN-SUFFIX,acg.tv,📺 BiliBili
-  - DOMAIN-SUFFIX,acgvideo.com,📺 BiliBili
-  - DOMAIN-SUFFIX,b23.tv,📺 BiliBili
-  - DOMAIN-SUFFIX,bigfun.cn,📺 BiliBili
-  - DOMAIN-SUFFIX,bigfunapp.cn,📺 BiliBili
-  - DOMAIN-SUFFIX,biliapi.com,📺 BiliBili
-  - DOMAIN-SUFFIX,biliapi.net,📺 BiliBili
-  - DOMAIN-SUFFIX,bilibili.com,📺 BiliBili
-  - DOMAIN-SUFFIX,bilibili.tv,📺 BiliBili
-  - DOMAIN-SUFFIX,biligame.com,📺 BiliBili
-  - DOMAIN-SUFFIX,biligame.net,📺 BiliBili
-  - DOMAIN-SUFFIX,bilivideo.cn,📺 BiliBili
-  - DOMAIN-SUFFIX,bilivideo.com,📺 BiliBili
-  - DOMAIN-SUFFIX,hdslb.com,📺 BiliBili
-  - DOMAIN-SUFFIX,im9.com,📺 BiliBili
-  - DOMAIN-SUFFIX,smtcdns.net,📺 BiliBili
-  # -BiliBili
+  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务  
   # 苹果服务-    
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
@@ -469,47 +497,6 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-  # -苹果服务 
-  # 电报消息- 
-  - DOMAIN-SUFFIX,t.me,📲 电报消息
-  - DOMAIN-SUFFIX,tdesktop.com,📲 电报消息
-  - DOMAIN-SUFFIX,telegra.ph,📲 电报消息
-  - DOMAIN-SUFFIX,telegram.me,📲 电报消息
-  - DOMAIN-SUFFIX,telegram.org,📲 电报消息
-  - DOMAIN-SUFFIX,telesco.pe,📲 电报消息
-  - IP-CIDR,91.108.0.0/16,📲 电报消息,no-resolve
-  - IP-CIDR,109.239.140.0/24,📲 电报消息,no-resolve
-  - IP-CIDR,149.154.160.0/20,📲 电报消息,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,📲 电报消息,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,📲 电报消息,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,📲 电报消息,no-resolve
-  # -电报消息
-  # Openai  
-  - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
-  - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
-  - DOMAIN-SUFFIX,ai.com,🥢 选择节点
-  - DOMAIN-SUFFIX,algolia.net,🥢 选择节点
-  - DOMAIN-SUFFIX,api.statsig.com,🥢 选择节点
-  - DOMAIN-SUFFIX,auth0.com,🥢 选择节点
-  - DOMAIN-SUFFIX,chatgpt.com,🥢 选择节点
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🥢 选择节点
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🥢 选择节点
-  - DOMAIN-SUFFIX,events.statsigapi.net,🥢 选择节点
-  - DOMAIN-SUFFIX,featuregates.org,🥢 选择节点
-  - DOMAIN-SUFFIX,host.livekit.cloud,🥢 选择节点
-  - DOMAIN-SUFFIX,identrust.com,🥢 选择节点
-  - DOMAIN-SUFFIX,intercom.io,🥢 选择节点
-  - DOMAIN-SUFFIX,intercomcdn.com,🥢 选择节点
-  - DOMAIN-SUFFIX,launchdarkly.com,🥢 选择节点
-  - DOMAIN-SUFFIX,oaistatic.com,🥢 选择节点
-  - DOMAIN-SUFFIX,oaiusercontent.com,🥢 选择节点
-  - DOMAIN-SUFFIX,observeit.net,🥢 选择节点
-  - DOMAIN-SUFFIX,segment.io,🥢 选择节点
-  - DOMAIN-SUFFIX,sentry.io,🥢 选择节点
-  - DOMAIN-SUFFIX,stripe.com,🥢 选择节点
-  - DOMAIN-SUFFIX,turn.livekit.cloud,🥢 选择节点
-  - DOMAIN-KEYWORD,openai,🥢 选择节点
-  # -Openai
   # Docker
   - DOMAIN,d1q6f0aelx0por.cloudfront.net,🥢 选择节点
   - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🥢 选择节点
@@ -518,7 +505,7 @@ rules:
   - DOMAIN-SUFFIX,docker.com,🥢 选择节点
   - DOMAIN-SUFFIX,docker.io,🥢 选择节点
   - DOMAIN-SUFFIX,dockerhub.com,🥢 选择节点
-  # -Docker
+  # 走代理的
   - DOMAIN-SUFFIX,1password.com,🥢 选择节点
   - DOMAIN-SUFFIX,okx.com,🥢 选择节点  
   - DOMAIN-SUFFIX,adguard.org,🥢 选择节点
@@ -858,7 +845,7 @@ rules:
   - DOMAIN-SUFFIX,ocnttv.com,🥢 选择节点
   - DOMAIN-SUFFIX,vikacg.com,🥢 选择节点
   - DOMAIN-SUFFIX,picjs.xyz,🥢 选择节点
-  # 区分符  
+  # 走直连的
   - DOMAIN-SUFFIX,13th.tech,🎯 直连网站
   - DOMAIN-SUFFIX,423down.com,🎯 直连网站
   - DOMAIN-SUFFIX,bokecc.com,🎯 直连网站
