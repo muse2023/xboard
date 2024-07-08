@@ -38,7 +38,6 @@ class ClientController extends Controller
             'Shadowrocket' => '1993',
             'ClashMetaForAndroid' => '2.9.0',
             'Nekoray' => '3.24',
-            'verge' => '1.3.8',
             'ClashX Meta' => '1.3.5',
             'Hiddify' => '0.1.0',
             'loon' => '637',

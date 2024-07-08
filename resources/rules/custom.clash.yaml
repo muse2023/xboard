@@ -119,6 +119,7 @@ rules:
   - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
   - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
   - DOMAIN-SUFFIX,v2ex.com,🥢 选择节点
+  - DOMAIN-SUFFIX,mingpao.com,🥢 选择节点  
   # Openai  
   - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
   - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
