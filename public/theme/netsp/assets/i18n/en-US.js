@@ -173,7 +173,7 @@ window.settings.i18n['en-US'] = {
   '工单等级': 'Ticket Priority',
   '请选择工单等级': 'Please select the ticket priority',
   '消息': 'Message',
-  '请描述你遇到的问题': 'Please describe the problem you encountered',
+  '请描述你遇到的问题': 'I am good at solving problems through search engines, and I am good at expressing problems and intentions clearly. I hope you can communicate in a calm tone. We will rush to each other from Dami..... We will deal with it in time!',
   '记录时间': 'Record Time',
   '实际上行': 'Actual Upload',
   '实际下行': 'Actual Download',
