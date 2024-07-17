@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/components.chunk.css?v={{$version}}">
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/umi.css?v={{$version}}">
     <link rel="stylesheet" href="/theme/{{$theme}}/assets/netsp.css">
+    <link rel="stylesheet" href="/theme/{{$theme}}/assets/font-awesome.min.css">
     @if (file_exists(public_path("/theme/{$theme}/assets/custom.css")))
         <link rel="stylesheet" href="/theme/{{$theme}}/assets/custom.css?v={{$version}}">
     @endif
@@ -52,7 +53,7 @@
     <script src="/theme/{{$theme}}/assets/i18n/ja-JP.js?v={{$version}}"></script>
     <script src="/theme/{{$theme}}/assets/i18n/vi-VN.js?v={{$version}}"></script>
     <script src="/theme/{{$theme}}/assets/i18n/ko-KR.js?v={{$version}}"></script>
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
