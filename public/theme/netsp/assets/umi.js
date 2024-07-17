@@ -12905,7 +12905,7 @@
 				}, u.a.createElement("div", {
 					className: "block-content pb-3 card"
 				}, u.a.createElement("i", {
-					className: "fa fa-wallet fa-2x text-gray-light float-right"
+					className: "fa fa-credit-card-alt fa-2x text-gray-light float-right"
 				}), u.a.createElement("div", {
 					className: "pb-sm-3"
 				}, u.a.createElement("p", {
