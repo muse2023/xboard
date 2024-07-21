@@ -80,7 +80,7 @@ class Clash
         });
         $config['proxy-groups'] = array_values($config['proxy-groups']);
         
-        $config = $this->buildRules($config);
+        // $config = $this->buildRules($config);
 
 
         $yaml = Yaml::dump($config, 2, 4, Yaml::DUMP_EMPTY_ARRAY_AS_SEQUENCE);

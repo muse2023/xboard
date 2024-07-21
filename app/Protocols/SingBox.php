@@ -21,7 +21,7 @@ class SingBox
         $appName = admin_setting('app_name', 'XBoard');
         $this->config = $this->loadConfig();
         $this->buildOutbounds();
-        $this->buildRule();
+        // $this->buildRule();
         $user = $this->user;
 
         return response()
