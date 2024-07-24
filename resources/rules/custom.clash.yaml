@@ -4,7 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-unified-delay: true
 
 clash-for-android:
     append-system-dns: false    
