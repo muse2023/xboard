@@ -27080,7 +27080,7 @@
 				}, Object(m["formatMessage"])({
 					id: "\u8ba2\u5355\u603b\u989d"
 				})), f.a.createElement("div", {
-					className: "row no-gutters pb-3 mr-3 ml-3",
+					className: "row pb-3",
 					style: {
 						borderBottom: "1px solid #646669"
 					}
