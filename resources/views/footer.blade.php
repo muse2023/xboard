@@ -52,7 +52,7 @@
           <li><a class="link-sm link-secondary" href="/user#/knowledge">使用文档</a> <i class="bi bi-exclamation-circle"
               data-bs-toggle="tooltip" data-bs-html="true" title="需登录状态下查看"></i></li>
           <li><a class="link-sm link-secondary" href="./faq ">常见问题</a></li>
-          <li><a class="link-sm link-secondary" href="http://123.207.66.230:3001/status/sla" target="_blank">BigME
+          <li><a class="link-sm link-secondary" href="http://124.71.67.76:3001/status/sla" target="_blank">BigME
               Status</a></li>
           <!--<li><a class="link-sm link-secondary" href="https://monitor.bigme.pro/">节点探针</a></li>-->
         </ul>
