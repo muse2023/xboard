@@ -5,7 +5,7 @@
 
         <div class="mb-5">
           <a class="navbar-brand" href="/" aria-label="Netsp">
-            <img class="navbar-brand-logo" src="https://pic.imgdb.cn/item/63e503064757feff33beb5a6.webp"
+            <img class="navbar-brand-logo" src="/assets/svg/logos/mianlogo.svg"
               alt="{{$title}}">
           </a>
         </div>
