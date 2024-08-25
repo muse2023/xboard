@@ -248,7 +248,7 @@ window.settings.i18n['en-US'] = {
   '续费订阅': 'Renewal Subscription',
   '学习如何使用': 'Learn how to use',
   '快速将节点导入对应客户端进行使用': 'Quickly export subscription into the client app',
-  '对您当前的订阅进行续费': 'Renew your current subscription',
+  '对您当前的订阅进行续费': 'Renewal will not increase your traffic, and work orders can be superimposed on unlimited package renewals.',
   '对您当前的订阅进行购买': 'Purchase your current subscription',
   '捷径': 'Shortcut',
   '不会使用，查看使用教程': 'I am a newbie, view the tutorial',

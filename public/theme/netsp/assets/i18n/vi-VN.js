@@ -248,7 +248,7 @@ window.settings.i18n['vi-VN'] = {
   '续费订阅': 'Gia hạn đăng ký',
   '学习如何使用': 'Hướng dẫn sử dụng',
   '快速将节点导入对应客户端进行使用': 'Bạn cần phải mua gói này',
-  '对您当前的订阅进行续费': 'Gia hạn gói hiện tại',
+  '对您当前的订阅进行续费': 'Việc gia hạn sẽ không làm tăng lưu lượng truy cập của bạn và lệnh sản xuất có thể được áp dụng cho việc gia hạn gói không giới hạn.',
   '对您当前的订阅进行购买': 'Mua gói bạn đã chọn',
   '捷径': 'Phím tắt',
   '不会使用，查看使用教程': 'Mua gói này nếu bạn đăng ký',
