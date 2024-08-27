@@ -14,12 +14,6 @@
 					<p>为各行各业客户保护您和您的数据 加速访问 App 应用 外贸 网站 娱乐内容等等。</p>
 				</div>
 
-				<!-- <div class="d-grid d-sm-flex gap-3">
-					<a class="btn btn-primary btn-transition" href="/user"><b>立即使用|免费体验</b></a>
-					<a class="btn btn-link"
-						href="https://ghproxy.com/https://github.com/muse2023/bigme-win-singbox/releases/download/v4.1.15-alpha-BigME/v4.1.15-alpha.exe"><i
-							class="bi bi-download"></i> BigME客户端下载 <i class="bi-chevron-right small ms-1"></i></a>
-				</div> -->
 				<div class="d-grid d-sm-flex gap-3">
 					<a class="btn btn-primary btn-transition" href="/user"><b>立即使用|免费体验</b></a>
 					<a class="btn btn-link"
