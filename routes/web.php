@@ -122,18 +122,18 @@ Route::get('/sla' . config('sla'), function () {
 // });
 
 //流媒体解锁
-Route::get('/streaming' . config('streaming'), function () {
-    return view('streaming', [
-        'title' => config('v2board.app_name', 'BigME'),
-        'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
-        'theme_header' => config('v2board.frontend_theme_header', 'dark'),
-        'theme_color' => config('v2board.frontend_theme_color', 'default'),
-        'background_url' => config('v2board.frontend_background_url'),
-        'version' => config('app.version'),
-        'url' => config('v2board.app_url'),
-        'logo' => config('v2board.logo')
-    ]);
-});
+// Route::get('/streaming' . config('streaming'), function () {
+//     return view('streaming', [
+//         'title' => config('v2board.app_name', 'BigME'),
+//         'theme_sidebar' => config('v2board.frontend_theme_sidebar', 'light'),
+//         'theme_header' => config('v2board.frontend_theme_header', 'dark'),
+//         'theme_color' => config('v2board.frontend_theme_color', 'default'),
+//         'background_url' => config('v2board.frontend_background_url'),
+//         'version' => config('app.version'),
+//         'url' => config('v2board.app_url'),
+//         'logo' => config('v2board.logo')
+//     ]);
+// });
 
 //推荐计划
 Route::get('/referral-program' . config('referral-program'), function () {
@@ -188,8 +188,8 @@ Route::get('/contact-us' . config('contact-us'), function () {
         'background_url' => config('v2board.frontend_background_url'),
         'version' => config('app.version'),
         'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
+        'telegrampindao' => 'https://bit.ly/3AIUWem',
+        'telegramqunliao' => 'https://bit.ly/3z2efim',
         'logo' => config('v2board.logo')
     ]);
 });
@@ -204,8 +204,8 @@ Route::get('/contact-us' . config('contact-us'), function () {
 //         'background_url' => config('v2board.frontend_background_url'),
 //         'version' => config('app.version'),
 //         'url' => config('v2board.app_url'),
-//         'telegrampindao' => 'https://t.me/bigme_pro',
-//         'telegramqunliao' => 'https://t.me/bigme_public',
+//         'telegrampindao' => 'https://bit.ly/3AIUWem',
+//         'telegramqunliao' => 'https://bit.ly/3z2efim',
 //         'logo' => config('v2board.logo')
 //     ]);
 // });
@@ -220,8 +220,8 @@ Route::get('/privacy' . config('privacy'), function () {
         'background_url' => config('v2board.frontend_background_url'),
         'version' => config('app.version'),
         'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
+        'telegrampindao' => 'https://bit.ly/3AIUWem',
+        'telegramqunliao' => 'https://bit.ly/3z2efim',
         'logo' => config('v2board.logo')
     ]);
 });
@@ -236,8 +236,8 @@ Route::get('/tos' . config('tos'), function () {
         'background_url' => config('v2board.frontend_background_url'),
         'version' => config('app.version'),
         'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
+        'telegrampindao' => 'https://bit.ly/3AIUWem',
+        'telegramqunliao' => 'https://bit.ly/3z2efim',
         'logo' => config('v2board.logo')
     ]);
 });
@@ -252,8 +252,8 @@ Route::get('/gdpr' . config('gdpr'), function () {
         'background_url' => config('v2board.frontend_background_url'),
         'version' => config('app.version'),
         'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
+        'telegrampindao' => 'https://bit.ly/3AIUWem',
+        'telegramqunliao' => 'https://bit.ly/3z2efim',
         'logo' => config('v2board.logo')
     ]);
 });
@@ -268,8 +268,8 @@ Route::get('/service-terms' . config('service-terms'), function () {
         'background_url' => config('v2board.frontend_background_url'),
         'version' => config('app.version'),
         'url' => config('v2board.app_url'),
-        'telegrampindao' => 'https://t.me/bigme_pro',
-        'telegramqunliao' => 'https://t.me/bigme_public',
+        'telegrampindao' => 'https://bit.ly/3AIUWem',
+        'telegramqunliao' => 'https://bit.ly/3z2efim',
         'logo' => config('v2board.logo')
     ]);
 });

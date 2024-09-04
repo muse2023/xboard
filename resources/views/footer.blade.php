@@ -12,9 +12,9 @@
 
 
         <ul class="list-unstyled list-py-1">
-          <li><a class="link-sm link-secondary" href="https://t.me/bigme_pro"><i class="bi-telegram me-1"></i> 公告频道</a>
+          <li><a class="link-sm link-secondary" href="https://bit.ly/3AIUWem"><i class="bi-telegram me-1"></i> 公告频道</a>
           </li>
-          <li><a class="link-sm link-secondary" href="https://t.me/bigme_public"><i class="bi-telegram me-1"></i>
+          <li><a class="link-sm link-secondary" href="https://bit.ly/3z2efim"><i class="bi-telegram me-1"></i>
               交流群组</a></li>
         </ul>
 

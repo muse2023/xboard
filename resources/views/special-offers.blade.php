@@ -1,8 +1,14 @@
 @include('header')
 
 <title>特别优惠 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}</title>
-<meta property="og:title" content="特别优惠 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}">
-<main id="content" role="main">
+<meta
+    property="og:title"
+    content="特别优惠 - 高速网络,企业服务 &amp; 匿名安全 高可用性服务商 | {{$title}}"
+>
+<main
+    id="content"
+    role="main"
+>
 
     <div class="gradient-y-sm-primary position-relative zi-2 overflow-hidden">
         <div class="container position-relative content-space-t-3 content-space-t-lg-4 content-space-b-2">
@@ -14,27 +20,65 @@
 
             <div class="content-space-t-5 content-space-lg-2"></div>
 
-            <figure class="position-absolute zi-n1" style="top: -35rem; left: 50rem; width: 62rem; height: 62rem;">
-                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
-                    <circle fill="#e7eaf3" opacity=".7" cx="130" cy="130" r="130" />
+            <figure
+                class="position-absolute zi-n1"
+                style="top: -35rem; left: 50rem; width: 62rem; height: 62rem;"
+            >
+                <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 260 260"
+                >
+                    <circle
+                        fill="#e7eaf3"
+                        opacity=".7"
+                        cx="130"
+                        cy="130"
+                        r="130"
+                    />
                 </svg>
             </figure>
 
 
-            <figure class="position-absolute zi-n1" style="top: 15rem; left: 70rem; width: 20rem; height: 20rem;">
-                <img class="img-fluid" src="/assets/svg/components/circled-stripe.svg" alt="Image Description">
+            <figure
+                class="position-absolute zi-n1"
+                style="top: 15rem; left: 70rem; width: 20rem; height: 20rem;"
+            >
+                <img
+                    class="img-fluid"
+                    src="/assets/svg/components/circled-stripe.svg"
+                    alt="Image Description"
+                >
             </figure>
 
 
-            <figure class="position-absolute zi-n1" style="bottom: 11rem; left: -3rem; width: 15rem; height: 15rem;">
-                <img class="img-fluid" src="/assets/svg/components/happy-birthday-1.svg" alt="Image Description">
+            <figure
+                class="position-absolute zi-n1"
+                style="bottom: 11rem; left: -3rem; width: 15rem; height: 15rem;"
+            >
+                <img
+                    class="img-fluid"
+                    src="/assets/svg/components/happy-birthday-1.svg"
+                    alt="Image Description"
+                >
             </figure>
 
         </div>
 
         <div class="shape shape-bottom zi-1">
-            <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+            <svg
+                width="3000"
+                height="500"
+                viewBox="0 0 3000 500"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0 500H3000V0L0 500Z"
+                    fill="#fff"
+                />
             </svg>
         </div>
 
@@ -59,7 +103,12 @@
                         </div>
                         <div class="col-md-auto">
 
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#usepromo-1">
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#usepromo-1"
+                            >
                                 查看优惠券
                             </button>
 
@@ -67,7 +116,11 @@
                     </div>
 
                     <figure class="w-25 d-none d-md-block position-absolute top-0 start-0 mt-n2">
-                        <img class="card-img" src="/assets/svg/illustrations/apps.svg" alt="Image Description">
+                        <img
+                            class="card-img"
+                            src="/assets/svg/illustrations/apps.svg"
+                            alt="Image Description"
+                        >
                     </figure>
 
                 </div>
@@ -75,12 +128,30 @@
 
         </div>
 
-        <div class="modal fade" id="usepromo-1" tabindex="-1" role="dialog" aria-labelledby="usepromolabel-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+        <div
+            class="modal fade"
+            id="usepromo-1"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="usepromolabel-1"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-centered"
+                role="document"
+            >
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="usepromolabel-1">使用该优惠券，用户首单九折优惠！</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5
+                            class="modal-title"
+                            id="usepromolabel-1"
+                        >使用该优惠券，用户首单九折优惠！</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
                     </div>
                     <div class="modal-body">
 
@@ -90,10 +161,20 @@
 
 
                         <div class="input-group mb-4">
-                            <input id='special-offers1' type="text" class="form-control" value="happy90%" readonly>
+                            <input
+                                id='special-offers1'
+                                type="text"
+                                class="form-control"
+                                value="happy90%"
+                                readonly
+                            >
                         </div>
                         <div class="pt-3 pb-5">
-                            <button id='copy' class="btn btn-primary btn-block js-clipboard font-weight-normal" onclick=copy()>复制到剪贴板|有效期无限</button>
+                            <button
+                                id='copy'
+                                class="btn btn-primary btn-block js-clipboard font-weight-normal"
+                                onclick=copy()
+                            >复制到剪贴板|有效期无限</button>
                             <script>
                                 function copy() {
                                     var text = document.getElementById('special-offers1');
@@ -105,7 +186,10 @@
                                 }
                             </script>
 
-                            <a class="btn btn-ghost-primary btn-transition" href="/user/#plan">前去下单 <i class="bi-chevron-right small ms-1"></i></a>
+                            <a
+                                class="btn btn-ghost-primary btn-transition"
+                                href="/user/#plan"
+                            >前去下单 <i class="bi-chevron-right small ms-1"></i></a>
                         </div>
 
                     </div>
@@ -205,30 +289,61 @@
 
 
     <div class="overflow-hidden">
-        <div class="container content-space-2 content-space-lg-3" id="free">
+        <div
+            class="container content-space-2 content-space-lg-3"
+            id="free"
+        >
             <div class="row justify-content-lg-between align-items-lg-center">
                 <div class="col-lg-6 mb-9 mb-lg-0">
-                    <div class="position-relative mx-auto" style="max-width: 20rem;">
+                    <div
+                        class="position-relative mx-auto"
+                        style="max-width: 20rem;"
+                    >
 
                         <figure class="device-mobile mx-auto">
                             <div class="device-mobile-frame">
-                                <img class="device-mobile-img" src="/assets/img/407x867/img5.jpg" alt="Image Description">
+                                <img
+                                    class="device-mobile-img"
+                                    src="/assets/img/407x867/img5.jpg"
+                                    alt="Image Description"
+                                >
                             </div>
                         </figure>
 
 
-                        <div class="position-absolute top-0 end-0 zi-2 me-n10 mt-9" style="width: 16rem;">
-                            <img class="img-fluid shadow-lg rounded-2" src="/assets/img/407x115/shadowrocket-sub-1.jpg" alt="Image Description">
+                        <div
+                            class="position-absolute top-0 end-0 zi-2 me-n10 mt-9"
+                            style="width: 16rem;"
+                        >
+                            <img
+                                class="img-fluid shadow-lg rounded-2"
+                                src="/assets/img/407x115/shadowrocket-sub-1.jpg"
+                                alt="Image Description"
+                            >
                         </div>
 
 
-                        <div class="position-absolute bottom-0 start-0 zi-2 ms-n10 mb-10" style="width: 16rem;">
-                            <img class="img-fluid shadow-lg rounded-2" src="/assets/img/480x320/img33.jpg" alt="Image Description">
+                        <div
+                            class="position-absolute bottom-0 start-0 zi-2 ms-n10 mb-10"
+                            style="width: 16rem;"
+                        >
+                            <img
+                                class="img-fluid shadow-lg rounded-2"
+                                src="/assets/img/480x320/img33.jpg"
+                                alt="Image Description"
+                            >
                         </div>
 
 
-                        <div class="position-absolute bottom-0 end-0 zi-n1 mx-auto" style="width: 20rem;">
-                            <img class="img-fluid" src="/assets/svg/components/shape-1.svg" alt="SVG">
+                        <div
+                            class="position-absolute bottom-0 end-0 zi-n1 mx-auto"
+                            style="width: 20rem;"
+                        >
+                            <img
+                                class="img-fluid"
+                                src="/assets/svg/components/shape-1.svg"
+                                alt="SVG"
+                            >
                         </div>
 
                     </div>
@@ -262,7 +377,10 @@
                         </li>
                     </ul>
 
-                    <a class="btn btn-primary btn-transition" href="contact-us ">联系我们</a>
+                    <a
+                        class="btn btn-primary btn-transition"
+                        href="contact-us "
+                    >联系我们</a>
                 </div>
 
             </div>
@@ -308,7 +426,10 @@
     </div>
 
 
-    <div class="bg-dark" style="background-image: url(/assets/svg/components/wave-pattern-light.svg);">
+    <div
+        class="bg-dark"
+        style="background-image: url(/assets/svg/components/wave-pattern-light.svg);"
+    >
         <div class="container content-space-2">
             <div class="row justify-content-lg-between align-items-lg-center">
                 <div class="col-md mb-5 mb-md-0">
@@ -317,8 +438,14 @@
 
                 <div class="col-md-auto">
                     <div class="d-grid d-sm-flex gap-3">
-                        <a class="btn btn-light btn-transition" href="contact-us ">联系我们</a>
-                        <a class="btn btn-ghost-light btn-transition" href="/user#/register">注册账户 <i class="bi-chevron-right small ms-1"></i></a>
+                        <a
+                            class="btn btn-light btn-transition"
+                            href="contact-us "
+                        >联系我们</a>
+                        <a
+                            class="btn btn-ghost-light btn-transition"
+                            href="/user#/register"
+                        >注册账户 <i class="bi-chevron-right small ms-1"></i></a>
                     </div>
                 </div>
 
