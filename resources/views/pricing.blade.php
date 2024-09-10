@@ -37,7 +37,7 @@
 
 			<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
 				<h2>BigME网络特性</h2>
-				<p>中国移动入口以及搭配AWSHK以其卓越的网络特性，获得广大用户欢迎，快速的连接，最具有性价比的传输速度。</p>
+				<p>中国移动入口以及搭配AWSHK以其卓越的网络特性，获得广大用户欢迎，高达2000Mbps快速的连接，最具有性价比的传输速度。</p>
 			</div>
 
 			<div class="row">
@@ -437,7 +437,7 @@
 							<div class="card-header text-center">
 								<div class="mb-2">
 									<span class="fs-5 align-top text-dark fw-semi-bold">¥</span>
-									<span class="fs-1 text-dark fw-semi-bold">50</span><span>.00/用完为止</span>
+									<span class="fs-1 text-dark fw-semi-bold">55</span><span>.00/用完为止</span>
 								</div>
 								<h3 class="card-title">Unlimited Time</h3>
 								<p class="card-text">不限时流量套餐</p>
