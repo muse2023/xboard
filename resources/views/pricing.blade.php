@@ -123,7 +123,7 @@
 									</svg>
 								</span>
 								<h4>更自由的选择</h4>
-								<p>相比传统业界同类协议，v2Hysteria的直连性能更优。在保留标准倍率的基础上，使用直连照顾不同群体使用需求，在中国移动的家庭网络中更有优势。</p>
+								<p>相比传统业界同类协议，歇斯底里的性能更优。在保留标准倍率的基础上，使用它照顾不同群体使用需求，在中国移动的家庭/蜂窝网络中更有优势。</p>
 							</div>
 
 						</div>
@@ -189,7 +189,7 @@
 										></path>
 									</svg>
 								</span>
-								<h4>流媒体</h4>
+								<h4>全球媒体</h4>
 								<p>网络遍布世界各地。在世界任何位置连接至BigME网络，以最快速度访问全球受区域限制的内容和流媒体。</p>
 							</div>
 
@@ -297,7 +297,7 @@
 									</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全解锁流媒体平台</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i>
-										Transit网络+v2Hysteria</li>
+										Transit网络+歇斯底里</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 45GB 流量/月</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 条款可用性保证
 									</li>
@@ -353,7 +353,7 @@
 											title="Netflix / Hulu / HBO / Spotify 等"
 										></i></li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i>
-										Transit网络+v2Hysteria</li>
+										Transit网络+歇斯底里</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 150GB 流量/月
 									</li>
 									<li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 条款可用性保证
@@ -407,8 +407,7 @@
 											data-bs-html="true"
 											title="Netflix / Hulu / HBO / Spotify 等"
 										></i></li>
-									<li class="mb-2 text-white"><i
-											class="bi bi-check-circle-fill"></i>Transit网络+v2Hysteria
+									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i>Transit网络+歇斯底里
 									</li>
 									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 300GB 流量/月</li>
 									<li class="mb-2 text-white"><i class="bi bi-check-circle-fill"></i> 条款可用性保证</li>
