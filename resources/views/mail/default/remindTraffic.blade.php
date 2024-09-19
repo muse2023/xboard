@@ -1,53 +1,45 @@
 <div style="background: #eee">
-    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tbody>
-            <tr>
-                <td>
-                    <div style="background:#fff">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <thead>
-                                <tr>
-                                    <td valign="middle" style="padding-left:30px;background: #377dff; background: linear-gradient(to right,#377dff, #377dff);color:#fff;padding:20px 40px;font-size: 21px;">{{$name}}</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="padding:40px 40px 0 40px;display:table-cell">
-                                    <td style="font-size:24px;line-height:1.5;color:#000;margin-top:40px">流量通知</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size:14px;color:#333;padding:24px 40px 0 40px">
-                                        尊敬的用户您好！
-                                        <br />
-                                        <br />
-                                        你的流量已经使用80%。为了不造成使用上的影响请合理安排流量的使用。
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size:14px;color:#377dff;padding:24px 40px 0 40px">
-                                            <a href="https://pub.bigmeok.me" style="font-size:14px;color:#377dff;text-decoration:none">网址发布页：https://pub.bigmeok.me</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size:14px;color:#377dff;padding:24px 40px 0 40px">
-                                        <a href="https://info.bigmeok.me" style="font-size:14px;color:#377dff;text-decoration:none">引导页：https://info.bigmeok.me</a>
-                                    </td>
-                                </tr>
-                                <tr style="padding:40px;display:table-cell">
-                                </tr>
-                            </tbody>
-                        </table>
+    <table
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+    >
+        <tr>
+            <td
+                align="center"
+                style="background-color:#f9fafd;"
+            >
+                <div
+                    style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 4px; padding: 48px; border-top: 20px solid #377dff;">
+                    <!-- Header with logo text -->
+                    <div style="margin-bottom: 30px; text-align: left;">
+                        <span
+                            style="font-size: 32px; font-weight: bold; color: #377dff; font-family: 'BigME.Pro', sans-serif;"
+                        >BigME.Pro</span>
                     </div>
-                    <div>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <tbody>
-                                <tr>
-                                    <td style="padding:20px 40px;font-size:12px;color:#999;line-height:20px;background:#f7f7f7"><a href="{{$url}}" style="font-size:14px;color:#929292">返回{{$name}}</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                    <!-- Content -->
+                    <div style="font-size: 14px; line-height: 24px; color: #000000; text-align: left;">
+                        <p style="font-weight:600; font-size:20px;">流量通知</p>
+                        <p>尊敬的 <span style="font-weight:600">BigME</span> 用户：</p>
+                        <p>你的流量已经使用80%。为了不造成使用上的影响请合理安排流量的使用。</p>
+                        <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
                     </div>
-                </td>
-            </tr>
-        </tbody>
+
+                    <!-- Divider -->
+                    <div style="background-color: #3b4253; height: 1px; margin: 32px 0;"></div>
+
+                    <!-- Footer -->
+                    <div style="font-size: 14px; color: #888888; text-align: left;">
+                        <p style="color: #F11D64;">导航网站(收藏)：pub.bigmeok.me
+                            <br>自动跳转(收藏)：1s.bigmeok.me
+                            <br>
+                        </p>
+                        <p>如遇到其它争议事项, 请及时通过工单或在线客服联系我们，我们必将尽全力为您解决。</p>
+                        <p>© 2023 BigME. All Rights Reserved.<br></p>
+                    </div>
+                </div>
+            </td>
+        </tr>
     </table>
 </div>
