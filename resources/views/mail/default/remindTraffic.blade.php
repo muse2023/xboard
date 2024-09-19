@@ -22,8 +22,14 @@
                     <div style="font-size: 14px; line-height: 24px; color: #000000; text-align: left;">
                         <p style="font-weight:600; font-size:20px;">流量通知</p>
                         <p>尊敬的 <span style="font-weight:600">BigME</span> 用户：</p>
-                        <p>你的流量已经使用80%。为了不造成使用上的影响请合理安排流量的使用。</p>
+                        <p>你的流量已经使用 <span style="font-weight:600;color: #377dff;"> 80%。</span>为了不造成使用上的影响请合理安排流量的使用。</p>
                         <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
+                        <p style="color: #F11D64;">
+                            最新网址：pub.bigmeok.me
+                            <br>
+                            自动跳转：1s.bigmeok.me
+                            <br>
+                        </p>
                     </div>
 
                     <!-- Divider -->
@@ -31,10 +37,7 @@
 
                     <!-- Footer -->
                     <div style="font-size: 14px; color: #888888; text-align: left;">
-                        <p style="color: #F11D64;">导航网站(收藏)：pub.bigmeok.me
-                            <br>自动跳转(收藏)：1s.bigmeok.me
-                            <br>
-                        </p>
+
                         <p>如遇到其它争议事项, 请及时通过工单或在线客服联系我们，我们必将尽全力为您解决。</p>
                         <p>© 2023 BigME. All Rights Reserved.<br></p>
                     </div>

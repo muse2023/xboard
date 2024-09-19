@@ -24,6 +24,12 @@
                         <p>尊敬的 <span style="font-weight:600">BigME</span> 用户：</p>
                         <p>{!! nl2br($content) !!}</p>
                         <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
+                        <p style="color: #F11D64;">
+                            导航网站：pub.bigmeok.me
+                            <br>
+                            自动跳转：1s.bigmeok.me
+                            <br>
+                        </p>
                     </div>
 
                     <!-- Divider -->
@@ -31,10 +37,7 @@
 
                     <!-- Footer -->
                     <div style="font-size: 14px; color: #888888; text-align: left;">
-                        <p style="color: #F11D64;">导航网站(收藏)：pub.bigmeok.me
-                            <br>自动跳转(收藏)：1s.bigmeok.me
-                            <br>
-                        </p>
+
                         <p>如遇到其它争议事项, 请及时通过工单或在线客服联系我们，我们必将尽全力为您解决。</p>
                         <p>© 2023 BigME. All Rights Reserved.<br></p>
                     </div>
