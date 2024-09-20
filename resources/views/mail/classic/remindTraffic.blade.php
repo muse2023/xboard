@@ -1,187 +1,135 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
-    <title>流量提示</title>
-    <style type="text/css">
-        img {
-            max-width: 100%;
-        }
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮箱验证码</title>
+    <style>
         body {
-            -webkit-font-smoothing: antialiased;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafd;
+            margin: 0;
+            padding: 0;
             -webkit-text-size-adjust: none;
-            width: 100% !important;
-            height: 100%;
-            line-height: 1.6em;
+            -ms-text-size-adjust: none;
         }
-
-        body {
-            background-color: #f6f6f6;
+        table {
+            border-spacing: 0;
+            width: 100%;
         }
-
-        @media only screen and (max-width: 640px) {
-            body {
-                padding: 0 !important;
-            }
-
-            h1 {
-                font-weight: 800 !important;
-                margin: 20px 0 5px !important;
-            }
-
-            h2 {
-                font-weight: 800 !important;
-                margin: 20px 0 5px !important;
-            }
-
-            h3 {
-                font-weight: 800 !important;
-                margin: 20px 0 5px !important;
-            }
-
-            h4 {
-                font-weight: 800 !important;
-                margin: 20px 0 5px !important;
-            }
-
-            h1 {
-                font-size: 22px !important;
-            }
-
-            h2 {
-                font-size: 18px !important;
-            }
-
-            h3 {
-                font-size: 16px !important;
-            }
-
-            .container {
-                padding: 0 !important;
+        table td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+            line-height: 100%;
+            vertical-align: middle;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 48px;
+            border-top: 20px solid #377dff;
+        }
+        .header {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .header span {
+            font-size: 32px;
+            font-weight: bold;
+            color: #377dff;
+            font-family: 'Arial', sans-serif;
+        }
+        .content {
+            font-size: 14px;
+            line-height: 24px;
+            color: #000000;
+            text-align: left;
+        }
+        .content p {
+            margin: 0 0 16px;
+        }
+        .content p.important {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .content p .highlight {
+            font-weight: 600;
+            color: #4687ff;
+        }
+        .divider {
+            background-color: #3b4253;
+            height: 1px;
+            margin: 32px 0;
+        }
+        .footer {
+            font-size: 14px;
+            color: #888888;
+            text-align: left;
+        }
+        .footer p {
+            margin: 0 0 16px;
+        }
+        /* Media Queries for responsive optimization */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                padding: 20px;
                 width: 100% !important;
             }
-
+            .header span {
+                font-size: 24px;
+            }
+            .content p.important {
+                font-size: 18px;
+            }
             .content {
-                padding: 0 !important;
+                font-size: 16px;
             }
-
-            .content-wrap {
-                padding: 10px !important;
-            }
-
-            .invoice {
-                width: 100% !important;
+            .divider {
+                margin: 24px 0;
             }
         }
     </style>
 </head>
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td align="center" style="background-color:#f9fafd;">
+                <div class="email-container" style="width:100%; max-width:600px;">
+                    <!-- Header with logo text -->
+                    <div class="header">
+                        <span>BigME.Pro</span>
+                    </div>
 
-<body itemscope itemtype="http://schema.org/EmailMessage"
-    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em; background-color: #f6f6f6; margin: 0;"
-    bgcolor="#f6f6f6">
-    <table class="body-wrap"
-        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; background-color: #f6f6f6; margin: 0;"
-        bgcolor="#f6f6f6">
-        <tr
-            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-            <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
-                valign="top">
-            </td>
-            <td class="container" width="600"
-                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto;"
-                valign="top">
-                <div class="content"
-                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
-                    <table class="main" width="100%" cellpadding="0" cellspacing="0"
-                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background-color: #fff; margin: 0; border: 1px solid #e9e9e9;"
-                        bgcolor="#fff">
-                        <tr
-                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                            <td class="alert alert-warning"
-                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 22px; font-weight: bold; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background-color: #0073ba; margin: 0; padding: 20px;"
-                                align="center" bgcolor="#0073ba" valign="top">
-                                流量提示
-                            </td>
-                        </tr>
-                        <tr
-                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                            <td class="content-wrap"
-                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 20px;"
-                                valign="top">
-                                <table width="100%" cellpadding="0" cellspacing="0"
-                                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                    <tr
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                        <td class="content-block"
-                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 34px; vertical-align: top; line-height: 1em; margin: 0; padding: 20px 0 30px;"
-                                            valign="top">
-                                            Dear Customer
-                                        </td>
-                                    </tr>
-                                    <tr
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                        <td class="content-block"
-                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; color: #4a4a4a; vertical-align: top; margin: 0; padding: 0 0 20px;"
-                                            valign="top">
-                                            您本月的套餐流量已使用 <strong>80%</strong>，请合理安排使用，避免提前耗尽
-                                        </td>
-                                    </tr>
-                                    <tr
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                        <td class="content-block"
-                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #757575; vertical-align: top; margin: 0; padding: 0 0 20px;"
-                                            valign="top">
-                                            (本邮件由系统自动发出，请勿直接回复)
-                                        </td>
-                                    </tr>
-                                    <tr
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                        <td class="content-block"
-                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; text-align: center; vertical-align: top; margin: 0; padding: 0 0 20px;"
-                                            valign="top">
-                                            <a href="{{$url}}"
-                                                class="btn-primary"
-                                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #fff; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #0073ba; margin: 0; border-color: #0073ba; border-style: solid; border-width: 8px 20px;">登录 {{$name}}</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="footer"
-                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; clear: both; color: #999; margin: 0; padding: 20px;">
-                        <table width="100%"
-                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                            <tr
-                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                <td class="aligncenter content-block"
-                                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0;"
-                                    align="center" valign="top">
-                                    &copy; {{$name}}. All Rights Reserved.
-                                </td>
-                            </tr>
-                            <tr
-                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                <td class="aligncenter content-block"
-                                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0 0 20px;"
-                                    align="center" valign="top">
-                                    <a href="{{$url}}/#/subscribe"
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: none; margin: 0;">我的订阅</a> |
-                                    <a href="{{$url}}/#/knowledge"
-                                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: none; margin: 0;">使用教程</a>
-                                </td>
-                            </tr>
-                        </table>
+                    <!-- Content -->
+                    <div class="content">
+                        <p class="important">邮箱验证码</p>
+                        <p>尊敬的 <span class="highlight">BigME</span> 用户：</p>
+                        <p>你的流量已经使用80%。为了不造成使用上的影响请合理安排流量的使用。</p>
+                        <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
+                        <p style="color: #F11D64;">
+                            最新网址：<a href="http://pub.bigmeok.me" target="_blank" style="color: #F11D64;">pub.bigmeok.me</a>
+                            <br>
+                            自动跳转：<a href="http://1s.bigmeok.me" target="_blank" style="color: #F11D64;">1s.bigmeok.me</a>
+                            <br>
+                        </p>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="divider"></div>
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <p>如遇到其它争议事项, 请及时通过工单或在线客服联系我们，我们必将尽全力为您解决。</p>
+                        <p>© 2023 BigME. All Rights Reserved.<br></p>
                     </div>
                 </div>
-            </td>
-            <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
-                valign="top">
             </td>
         </tr>
     </table>
 </body>
-
 </html>
