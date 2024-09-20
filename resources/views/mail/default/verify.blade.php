@@ -109,7 +109,7 @@
                     <div class="content">
                         <p class="important">邮箱验证码</p>
                         <p>尊敬的 <span class="highlight">BigME</span> 用户：</p>
-                        <p>您的邮箱验证码为：<span class="highlight">{{code}}</span></p>
+                        <p>您的邮箱验证码为：<span class="highlight">{{$code}}</span></p>
                         <p>请在网页中填写, 完成验证。</p>
                         <p><span class="highlight">注意:</span> 请在 5 分钟内进行验证。</p>
                         <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
