@@ -111,7 +111,7 @@
                         <p>尊敬的 <span class="highlight">BigME</span> 用户：</p>
                         <p>您正在登入到BigME, 请在 5 分钟内点击下方链接进行登入。如果您未授权该登入请求，请无视。</p>
                         <a href="{{$link}}">{{$link}}</a>
-                        <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
+                        <p style="color: #888888;">此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
                         <p style="color: #F11D64;">
                             最新网址：<a href="http://pub.bigmeok.me" target="_blank" style="color: #F11D64;">pub.bigmeok.me</a>
                             <br>

@@ -110,7 +110,7 @@
                         <p class="important">邮箱验证码</p>
                         <p>尊敬的 <span class="highlight">BigME</span> 用户：</p>
                         <p>你的服务将在24小时内到期。为了不造成使用上的影响请尽快续费。如果你已续费请忽略此邮件。</p>
-                        <p>此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
+                        <p style="color: #888888;">此为系统邮件，请勿回复。请妥善保管您的邮箱，避免账号被他人盗用。</p>
                         <p style="color: #F11D64;">
                             最新网址：<a href="http://pub.bigmeok.me" target="_blank" style="color: #F11D64;">pub.bigmeok.me</a>
                             <br>
