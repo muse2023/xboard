@@ -278,7 +278,7 @@ class OrderService
         $this->user->expired_at = $this->getTime($order->period, $this->user->expired_at);
     }
 
-    private function buyByOneTime(Plan $plan)
+    private function buyByOneTime(Order $order,Plan $plan)
     {
         if ((int)$order->type === 3) {
             $this->buyByResetTraffic();
