@@ -45,7 +45,7 @@ class OrderService
             }
             switch ((string)$order->period) {
                 case 'onetime_price':
-                    $this->buyByOneTime($plan);
+                    $this->buyByOneTime($order,$plan);
                     break;
                 case 'reset_price':
                     $this->buyByResetTraffic();
@@ -56,7 +56,7 @@ class OrderService
 
             switch ((int)$order->type) {
                 case 1:
-                    $this->openEvent(admin_setting('new_order_event_id', 0));
+                    if(((string)$order->period) !== 'onetime_price') $this->openEvent(admin_setting('new_order_event_id', 0));
                     break;
                 case 2:
                     $this->openEvent(admin_setting('renew_order_event_id', 0));
@@ -280,8 +280,12 @@ class OrderService
 
     private function buyByOneTime(Plan $plan)
     {
-        $this->buyByResetTraffic();
-        $this->user->transfer_enable = $plan->transfer_enable * 1073741824;
+        if ((int)$order->type === 3) {
+            $this->buyByResetTraffic();
+            $this->user->transfer_enable = $plan->transfer_enable * 1073741824;
+        } else {
+            $this->user->transfer_enable = $this->user->transfer_enable + $plan->transfer_enable * 1073741824;
+        }
         $this->user->plan_id = $plan->id;
         $this->user->group_id = $plan->group_id;
         $this->user->expired_at = NULL;
