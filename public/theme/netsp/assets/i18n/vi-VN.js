@@ -96,7 +96,7 @@ window.settings.i18n['vi-VN'] = {
   '订单总额': 'Tổng tiền đơn hàng',
   '下单': 'Đặt hàng',
   '总计': 'Tổng',
-  '变更订阅会导致当前订阅被新订阅覆盖，请注意。': 'Việc thay đổi gói dịch vụ sẽ thay thế gói hiện tại bằng gói mới, xin lưu ý.',
+  '变更订阅会导致当前订阅被新订阅覆盖，请注意。': 'Lưu ý rằng việc thay đổi đăng ký sẽ khiến lưu lượng/thời hạn hiệu lực của đăng ký hiện tại được đặt lại. Vui lòng ghi nhớ thời gian/lưu lượng truy cập còn lại hiện tại và chúng tôi có thể đền bù cho bạn thông qua lệnh sản xuất.',
   '该订阅无法续费': 'Gói này không thể gia hạn',
   '选择其他订阅': 'Chọn gói dịch vụ khác',
   '我的钱包': 'Ví tiền của tôi',

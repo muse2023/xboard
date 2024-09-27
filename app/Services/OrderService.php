@@ -49,6 +49,10 @@ class OrderService
                     break;
                 case 'reset_price':
                     $this->buyByResetTraffic();
+                    // 只在 reset_price 情况下检查并更新到期时间
+                    if ($this->user->expired_at < time() || $this->user->expired_at < strtotime('+1 month')) {
+                        $this->user->expired_at = strtotime('+1 month');
+                    }
                     break;
                 default:
                     $this->buyByPeriod($order, $plan);
@@ -273,6 +277,17 @@ class OrderService
         if ($this->user->expired_at === NULL) $this->buyByResetTraffic();
         // 新购
         if ($order->type === 1) $this->buyByResetTraffic();
+
+        // 如果订单类型是续费（type 为 2），则检查到期时间
+        if ($order->type === 2) {
+            // 如果到期时间小于当前时间，或者到期时间小于一个月
+            if ($this->user->expired_at < time() || ($this->user->expired_at < strtotime('+1 month') && ($this->user->u + $this->user->d) > $this->user->transfer_enable)) {
+                // 将用户的到期时间设置为当前时间
+                $this->user->expired_at = time();
+                $this->buyByResetTraffic();
+            }
+        }
+
         $this->user->plan_id = $plan->id;
         $this->user->group_id = $plan->group_id;
         $this->user->expired_at = $this->getTime($order->period, $this->user->expired_at);

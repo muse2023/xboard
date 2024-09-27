@@ -96,7 +96,7 @@ window.settings.i18n['en-US'] = {
   '订单总额': 'Order Total',
   '下单': 'Order',
   '总计': 'Total',
-  '变更订阅会导致当前订阅被新订阅覆盖，请注意。': 'Attention please, change subscription will overwrite your current subscription.',
+  '变更订阅会导致当前订阅被新订阅覆盖，请注意。': 'Note that changing the subscription will cause the current subscription traffic/validity period to be reset. Please remember the current remaining time/traffic, and we can compensate you through a work order.',
   '该订阅无法续费': 'This subscription cannot be renewed',
   '选择其他订阅': 'Choose another subscription',
   '我的钱包': 'My Wallet',
