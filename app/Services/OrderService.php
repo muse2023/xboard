@@ -295,17 +295,23 @@ class OrderService
 
     private function buyByOneTime(Order $order,Plan $plan)
     {
-        if ((int)$order->type === 3) {
-            $this->buyByResetTraffic();
-            $this->user->transfer_enable = $plan->transfer_enable * 1073741824;
-        } else {
-            $this->user->transfer_enable = $this->user->transfer_enable + $plan->transfer_enable * 1073741824;
+        // 如果是变更订单 (type === 3)，则重置为新购一次性套餐的流量
+        if ((int)$order->type === 3) {  
+            $this->buyByResetTraffic();  // 重置流量
+            $this->user->transfer_enable = $plan->transfer_enable * 1073741824;  // 设置新套餐的流量
+        } elseif ($this->user->expired_at !== NULL) {  // 如果有到期时间，重置流量
+            $this->buyByResetTraffic();  // 重置流量
+            $this->user->transfer_enable = $plan->transfer_enable * 1073741824;  // 设置新套餐的流量
+        } else {  // 如果没有到期时间，叠加流量
+            $this->user->transfer_enable = $this->user->transfer_enable + $plan->transfer_enable * 1073741824;  // 叠加流量
         }
+    
+        // 无论是哪种类型的订单，更新套餐和用户组信息
         $this->user->plan_id = $plan->id;
         $this->user->group_id = $plan->group_id;
-        $this->user->expired_at = NULL;
+        $this->user->expired_at = NULL;  // 到期时间为空，等于不限时
     }
-
+    
     private function getTime($str, $timestamp)
     {
         if ($timestamp < time()) {
