@@ -18,11 +18,6 @@ class Server
      */
     public function handle(Request $request, Closure $next, $node_type = null)
     {
-        $token = $request->input('token');
-        if (empty($token)) {
-            throw new ApiException('token is null', 403);
-        }
-
         // alias
         $aliasTypes = [
             'v2ray' => 'vmess',
@@ -31,6 +26,7 @@ class Server
         $request->validate([
             'token' => [
                 "string",
+                "required",
                 function ($attribute, $value, $fail) {
                     if ($value !== admin_setting('server_token')) {
                         $fail('The ' . $attribute . ' is invalid.');
@@ -39,6 +35,7 @@ class Server
             ],
             'node_id' => 'required',
             'node_type' => [
+                'required',
                 'nullable',
                 'regex:/^(?i)(hysteria|hysteria2|vless|trojan|vmess|v2ray|tuic|shadowsocks|shadowsocks-plugin)$/',
                 function ($attribute, $value, $fail) use ($aliasTypes, $request) {
