@@ -14,13 +14,11 @@ experimental:
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [119.29.29.29, 180.184.2.2, 1.1.1.1]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
+    listen: '0.0.0.0:1053'
     use-hosts: true
-    nameserver: [119.29.29.29, 223.5.5.5, 180.184.1.1]
-    fallback: ['https://dns.quad9.net/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://doh.apad.pro/dns-query']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }    
+    default-nameserver: [119.29.29.29, 223.5.5.5, 180.184.1.1]
+    nameserver: [119.28.28.28, 223.6.6.6, 'https://1.12.12.12/dns-query', 'https://dns.alidns.com/dns-query', 'tls://223.6.6.6:853']    
+    fake-ip-range: 198.18.0.1/16
 
 proxies:
 
