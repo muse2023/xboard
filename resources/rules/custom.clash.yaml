@@ -103,7 +103,7 @@ rules:
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
   - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
   - DOMAIN-SUFFIX,steampowered.com,🥢 选择节点
-  - DOMAIN-SUFFIX,bigme.pro,🥢 选择节点
+  - DOMAIN-KEYWORD,bigme,🥢 选择节点
   - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
   - DOMAIN-SUFFIX,v2ex.com,🥢 选择节点
   - DOMAIN-SUFFIX,mingpao.com,🥢 选择节点  
