@@ -39,7 +39,7 @@
         <ul class="list-unstyled list-py-1 mb-0">
           <!-- <li><a class="link-sm link-secondary" href="./features ">{{$title}} 特性</a></li> -->
           <!-- <li><a class="link-sm link-secondary" href="./protocol-use ">协议使用</a></li> -->
-          <li><a class="link-sm link-secondary" href="./streaming ">流媒体解锁</a></li>
+          <li><a class="link-sm link-secondary" href="./aup ">可接受使用政策</a></li>
           <!-- <li><a class="link-sm link-secondary" href="./pricing ">价格</a></li> -->
         </ul>
 

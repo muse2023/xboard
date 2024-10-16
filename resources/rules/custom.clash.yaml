@@ -50,12 +50,12 @@ rules:
   # 阿里云
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 国内网站
   - DOMAIN-SUFFIX,aliyun.com,🎯 国内网站
-  # 向日葵    
+  # 向日葵
   - DOMAIN,checkip.synology.com,🎯 国内网站
   - DOMAIN,ddns.synology.com,🎯 国内网站
-  # 微软网络检测直连
+  # 微软检测网络连接
   - DOMAIN-SUFFIX,msftconnecttest.com,🎯 国内网站
-  # 内网直连
+  # 内网设备
   - DOMAIN-SUFFIX,acl4.ssr,🎯 国内网站
   - DOMAIN-SUFFIX,ip6-localhost,🎯 国内网站
   - DOMAIN-SUFFIX,ip6-loopback,🎯 国内网站
@@ -87,33 +87,60 @@ rules:
   - DOMAIN-SUFFIX,routerlogin.com,🎯 国内网站
   - DOMAIN-SUFFIX,tendawifi.com,🎯 国内网站
   - DOMAIN-SUFFIX,zte.home,🎯 国内网站
-  - DOMAIN-SUFFIX,tplogin.cn,🎯 国内网站 
-  # SteamCN直连
-  - DOMAIN,csgo.wmsj.cn,🎯 国内网站 
-  - DOMAIN,dl.steam.clngaa.com,🎯 国内网站 
-  - DOMAIN,dl.steam.ksyna.com,🎯 国内网站 
-  - DOMAIN,dota2.wmsj.cn,🎯 国内网站 
-  - DOMAIN,st.dl.bscstorage.net,🎯 国内网站 
-  - DOMAIN,st.dl.eccdnx.com,🎯 国内网站 
-  - DOMAIN,st.dl.pinyuncloud.com,🎯 国内网站 
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 国内网站 
-  - DOMAIN,steampowered.com.8686c.com,🎯 国内网站 
-  - DOMAIN,steamstatic.com.8686c.com,🎯 国内网站 
-  - DOMAIN,wmsjsteam.com,🎯 国内网站 
-  - DOMAIN,xz.pphimalayanrt.com,🎯 国内网站 
-  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 国内网站 
-  - DOMAIN-SUFFIX,steamchina.com,🎯 国内网站 
-  - DOMAIN-SUFFIX,steamcontent.com,🎯 国内网站 
-  - DOMAIN-SUFFIX,steamserver.net,🎯 国内网站 
-  - DOMAIN-SUFFIX,steamusercontent.com,🎯 国内网站 
-  # Proxy  
+  - DOMAIN-SUFFIX,tplogin.cn,🎯 国内网站
+  # 其他
+  - DOMAIN-SUFFIX,ipw.cn,🎯 国内网站
+  # SteamCN
+  - DOMAIN,csgo.wmsj.cn,🎯 国内网站
+  - DOMAIN,dl.steam.clngaa.com,🎯 国内网站
+  - DOMAIN,dl.steam.ksyna.com,🎯 国内网站
+  - DOMAIN,dota2.wmsj.cn,🎯 国内网站
+  - DOMAIN,st.dl.bscstorage.net,🎯 国内网站
+  - DOMAIN,st.dl.eccdnx.com,🎯 国内网站
+  - DOMAIN,st.dl.pinyuncloud.com,🎯 国内网站
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 国内网站
+  - DOMAIN,steampowered.com.8686c.com,🎯 国内网站
+  - DOMAIN,steamstatic.com.8686c.com,🎯 国内网站
+  - DOMAIN,wmsjsteam.com,🎯 国内网站
+  - DOMAIN,xz.pphimalayanrt.com,🎯 国内网站
+  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 国内网站
+  - DOMAIN-SUFFIX,steamchina.com,🎯 国内网站
+  - DOMAIN-SUFFIX,steamcontent.com,🎯 国内网站
+  - DOMAIN-SUFFIX,steamserver.net,🎯 国内网站
+  - DOMAIN-SUFFIX,steamusercontent.com,🎯 国内网站
+  # 必须代理
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,🥢 选择节点
   - DOMAIN-SUFFIX,steamcommunity.com,🥢 选择节点
   - DOMAIN-SUFFIX,steampowered.com,🥢 选择节点
-  - DOMAIN-KEYWORD,bigme,🥢 选择节点
   - DOMAIN-SUFFIX,mypikpak.com,🥢 选择节点
+  - DOMAIN-SUFFIX,mingpao.com,🥢 选择节点
   - DOMAIN-SUFFIX,v2ex.com,🥢 选择节点
-  - DOMAIN-SUFFIX,mingpao.com,🥢 选择节点  
+  # Docker
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🥢 选择节点
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🥢 选择节点
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🥢 选择节点
+  - DOMAIN-SUFFIX,compose-spec.io,🥢 选择节点
+  - DOMAIN-SUFFIX,docker.com,🥢 选择节点
+  - DOMAIN-SUFFIX,docker.io,🥢 选择节点
+  - DOMAIN-SUFFIX,dockerhub.com,🥢 选择节点
+  # OneDrive
+  - DOMAIN-SUFFIX,1drv.com,🥢 选择节点
+  - DOMAIN-SUFFIX,livefilestore.com,🥢 选择节点
+  - DOMAIN-SUFFIX,oneclient.sfx.ms,🥢 选择节点
+  - DOMAIN-SUFFIX,onedrive.com,🥢 选择节点
+  - DOMAIN-SUFFIX,onedrive.live.com,🥢 选择节点
+  - DOMAIN-SUFFIX,photos.live.com,🥢 选择节点
+  - DOMAIN-SUFFIX,sharepoint.com,🥢 选择节点
+  - DOMAIN-SUFFIX,sharepointonline.com,🥢 选择节点
+  - DOMAIN-SUFFIX,skydrive.wns.windows.com,🥢 选择节点
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🥢 选择节点
+  - DOMAIN-SUFFIX,storage.live.com,🥢 选择节点
+  - DOMAIN-SUFFIX,storage.msn.com,🥢 选择节点
+  - DOMAIN-KEYWORD,1drv,🥢 选择节点
+  - DOMAIN-KEYWORD,onedrive,🥢 选择节点
+  - DOMAIN-KEYWORD,skydrive,🥢 选择节点
+  - PROCESS-NAME,OneDrive,🥢 选择节点
+  - PROCESS-NAME,OneDriveUpdater,🥢 选择节点     
   # Openai  
   - DOMAIN,browser-intake-datadoghq.com,🥢 选择节点
   - DOMAIN,static.cloudflareinsights.com,🥢 选择节点
