@@ -26,7 +26,7 @@ class KnowledgeController extends Controller
                 $this->formatAccessData($knowledge['body']);
             }
             $subscribeUrl = Helper::getSubscribeUrl("/api/v1/client/subscribe?token={$user['token']}");
-            $subscribeEmbyUrl = preg_replace('/https?:\/\/[^\/]+/', "https://api.bigme.online", $subscribeUrl);
+            $subscribeEmbyUrl = preg_replace('/https?:\/\/[^\/]+/', "https://jmsembyurl.bigme.pro", $subscribeUrl);
             $knowledge['body'] = str_replace('{{siteName}}', admin_setting('app_name', 'XBoard'), $knowledge['body']);
             $knowledge['body'] = str_replace('{{subscribeUrl}}', $subscribeUrl, $knowledge['body']);
             $knowledge['body'] = str_replace('{{subscribeEmbyUrl}}', $subscribeEmbyUrl, $knowledge['body']);
