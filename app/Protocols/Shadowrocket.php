@@ -32,7 +32,7 @@ class Shadowrocket
         } else {
             $expiredDate = date('Y-m-d', $user['expired_at']);
         }
-        $uri .= "STATUS=⚡已使用,↑:{$upload}GB,↓:{$download}GB,🥢总流量:{$totalTraffic}GB,🆘到期时间:{$expiredDate}\r\n";
+        $uri .= "STATUS=🚀↑:{$upload}GB,↓:{$download}GB,TOT:{$totalTraffic}GB💡Expires:{$expiredDate}\r\n";
         foreach ($servers as $item) {
             if ($item['type'] === 'shadowsocks') {
                 $uri .= self::buildShadowsocks($item['password'], $item);
